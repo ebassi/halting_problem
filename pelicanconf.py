@@ -32,6 +32,12 @@ PAGINATION_PATTERNS = (
     (2, '{base_name}/page/{number}', '{base_name}/page/{number}/index.html'),
 )
 
+ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+
+YEAR_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
+
 THEME = 'theme/hlt'
 
 TWITTER_USERNAME = 'ebassi'
