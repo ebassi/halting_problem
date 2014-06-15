@@ -1,7 +1,7 @@
 @import url("pygment.css");
 
 body {
-  background: #fff;
+  background: white;
   color: #333;
   font-family: 'Alegreya', 'Lucida Grande', 'Lucida Sans', serif;
   font-size: 22px;
@@ -38,7 +38,18 @@ h4 {
 
 time {
   color: #c0c0c0;
-  font-size: 50%;
+  font-size: 14px;
+  margin-top: 65px;
+}
+
+article hr {
+  color: #c0c0c0;
+  width: 20%;
+  margin: 50px auto 40px auto;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: content-box;
+  height: 0;
 }
 
 img {
@@ -46,10 +57,11 @@ img {
 }
 
 blockquote {
-  border-left: 1px solid #A5ABAB;
-  margin: 48px -160px;
+  border-top: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+  margin: 48px -60px;
   padding: 0 12px 0 12px;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-style: italic;
 }
 
@@ -90,24 +102,37 @@ ul li, ol li {
 
 strong {
   color: #555555;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
 }
 
 tt, pre {
   background-color: #fafafa;
-  font-family: Inconsolata, Monaco, monospace;
+  font-family: 'Inconsolata', Monaco, monospace;
   line-height: 1.2em;
 }
 
 pre {
-  font-size: 0.8em;
+  font-size: 18px;
   overflow: auto;
   padding: 10px;
 }
 
 header {
-  padding-bottom: 20px;
+  position: fixed;
+  padding-bottom: 12px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  z-index: 500;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.3);
+  transform: translateY(0px);
+  transition: .2s background-color, color;
+  box-sizing: border-box;
+  display: block;
+  visibility: visible;
+  text-align: center;
 }
 
 header a {
@@ -116,6 +141,21 @@ header a {
 
 header a#page-title {
   font-weight: bold;
+}
+
+header a#article-author {
+  text-align: right;
+  color: #c0c0c0;
+  font-size: 14px;
+  margin-top: 65px;
+  padding-left: 10em;
+}
+
+article p#article-meta {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #c0c0c0;
+  text-align: right;
 }
 
 #article-list {
@@ -128,19 +168,27 @@ header a#page-title {
   padding-bottom: 10px;
 }
 
+article {
+  padding-top: 80px;
+}
+
 footer {
   background: #fff;
   color: #666;
-  font-family: helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 4px;
-  margin-left: 20px;
-  width: 100%;
+  margin: 0 20px;
 }
 
 footer a {
   border-bottom: none;
   color: #c0c0c0;
+}
+
+footer ul.social li a {
+  color: #aaa;
+  border-bottom: #666 1px solid;
+  text-decoration: none;
 }
 
 footer li {
@@ -149,4 +197,16 @@ footer li {
 
 footer p {
   text-align: right;
+}
+
+footer ul.social {
+  text-align: center;
+}
+
+ul.social li::before {
+  content: ":: ";
+}
+
+ul.social li::after {
+  content: " ::";
 }
