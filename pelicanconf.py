@@ -23,9 +23,16 @@ LINKS = ()
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/ebassi'),
           ('tumblr', 'http://tumblr.emmanuelebassi.name'),
-          ('G+', 'https://plus.google.com/+EmmanueleBassi'),)
+          ('G+', 'https://plus.google.com/+EmmanueleBassi'),
+          ('github', 'https://github.com/ebassi'),)
 
 DEFAULT_PAGINATION = 3
+PAGINATION_PATTERNS = (
+    (1, '{base_name}/', '{base_name}/index.html'),
+    (2, '{base_name}/page/{number}', '{base_name}/page/{number}/index.html'),
+)
+
+THEME = 'theme/hlt'
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
