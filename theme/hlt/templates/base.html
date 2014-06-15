@@ -40,6 +40,13 @@
                     <li>:: <a href="{{ SITEURL }}/tags.html">Tags</a></li>
                 {% endif %}
                 </ul>
+                {% if SOCIAL %}
+                <ul class="social widget">
+                {% for name, link in SOCIAL %}
+                    <li>:: <a href="{{ link }}">{{ name }}</a></li>
+                {% endfor %}
+                </ul>
+                {% endif %}
             </nav>
         </footer>
 
