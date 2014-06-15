@@ -1,5 +1,8 @@
 Title: About
 Slug: about-me
+Author: ebassi
+
+Emmanuele Bassi.
 
 geek, husband, lover, software developer, londoner.
 

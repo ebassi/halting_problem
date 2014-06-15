@@ -4,6 +4,7 @@ Category: life
 Tags: first-psot
 Slug: hello-world
 Summary: First post on my new blog.
+Author: ebassi
 
 it has been a while.
 
