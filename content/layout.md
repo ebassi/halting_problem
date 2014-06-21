@@ -1,7 +1,8 @@
-Title: pelican
-Slug: pelican
-Date: 2014-06-16
+Title: layout and style
+Slug: layout-and-style
+Date: 2014-12-31
 Author: ebassi
+Category: tests
 
 *or: the case for static websites*
 
