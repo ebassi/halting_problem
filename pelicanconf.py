@@ -45,11 +45,6 @@ MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
 
 THEME = 'theme/hlt'
 
-TWITTER_USERNAME = 'ebassi'
-
-GOOGLE_ANALYTICS = 'UA-51960001-1'
-
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = False
-
 WITH_FUTURE_DATES = False

@@ -20,5 +20,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+TWITTER_USERNAME = 'ebassi'
+GOOGLE_ANALYTICS = 'UA-51960001-1'
