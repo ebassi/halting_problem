@@ -1,8 +1,6 @@
 Title: layout and style
 Slug: layout-and-style
-Date: 2014-12-31
-Author: ebassi
-Category: tests
+Status: draft
 
 *or: the case for static websites*
 
