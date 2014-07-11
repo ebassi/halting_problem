@@ -113,8 +113,11 @@ tt, pre {
 
 pre {
   font-size: 18px;
-  overflow: auto;
   padding: 10px;
+  overflow: auto;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
 }
 
 header {
