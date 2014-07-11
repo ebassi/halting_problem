@@ -91,7 +91,7 @@ to prod those guys. ;-)
 
 - - -
 
-Photo credits:
+#### Photo credits
 
   1. Jonathan Thorne, CC by-nc-2.0
   2. Jenn and Tony Bot, CC by-nc 2.0
