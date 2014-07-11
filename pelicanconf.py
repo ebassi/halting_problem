@@ -13,6 +13,7 @@ TIMEZONE = 'Europe/London'
 DEFAULT_LANG = u'en'
 DEFAULT_DATE = 'fs'
 DEFAULT_CATEGORY = 'misc'
+DEFAULT_DATE_FORMAT = '%B %d, %Y'
 
 AUTHOR = 'ebassi'
 
