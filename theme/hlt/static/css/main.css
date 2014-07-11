@@ -162,6 +162,18 @@ article p#article-meta {
   text-align: right;
 }
 
+.meta {
+  border: none;
+  text-decoration: none;
+  color: #333;
+}
+
+.tag {
+  background-color: #eee;
+  padding: 0.1em 0.4em;
+  margin: 0.1em 0.4em;
+}
+
 #article-list {
   margin-top: 100px;
 }
