@@ -12,4 +12,4 @@ not necessarily in that order.
  * [tumblr](http://tumblr.emmanuelebassi.name)
  * [G+](https://plus.google.com/+EmmanueleBassi)
  * [github](https://github.com/ebassi)
-
+ * [ohloh](https://www.ohloh.net/accounts/ebassi)
