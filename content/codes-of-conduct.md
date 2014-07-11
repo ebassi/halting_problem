@@ -1,7 +1,7 @@
 Title: codes of conduct
 Slug: codes-of-conduct
 Category: gnome
-Tags: essays, free-software, communities
+Tags: essays, free-software, communities, gnome
 
 a discussion on [guadec-list][1] about adopting a code of conduct for GUADEC
 prompted me to write down some thoughts about the issue.
