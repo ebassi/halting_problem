@@ -44,6 +44,10 @@ PAGINATION_PATTERNS = (
     (2, '{base_name}/page/{number}', '{base_name}/page/{number}/index.html'),
 )
 
+AUTHORS_SAVE_AS = ''
+CATEGORIES_SAVE_AS = ''
+TAGS_SAVE_AS = 'tags/index.html'
+
 ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
@@ -52,6 +56,15 @@ PAGE_SAVE_AS = 'pages/{slug}/index.html'
 
 YEAR_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
+
+AUTHOR_URL = ''
+AUTHOR_SAVE_AS = ''
+
+CATEGORY_URL = ''
+CATEGORY_SAVE_AS = ''
+
+TAG_URL = 'tag/{slug}'
+TAG_SAVE_AS = 'tag/{slug}/index.html'
 
 THEME = 'theme/hlt'
 
