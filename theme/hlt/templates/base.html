@@ -26,10 +26,10 @@
                     <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>{% if not loop.last %} ::{% endif %}</li>
                 {% endfor %}
                 {% if categories|length > 1 %}
-                    <li>:: <a href="{{ SITEURL }}/categories.html">Categories</a></li>
+                    <li>:: <a class="meta category" href="{{ SITEURL }}/categories.html">Categories</a></li>
                 {% endif %}
                 {% if tags|length > 1 %}
-                    <li>:: <a href="{{ SITEURL }}/tags.html">Tags</a></li>
+                    <li>:: <a class="meta tag" href="{{ SITEURL }}/tags.html">Tags</a></li>
                 {% endif %}
                 </ul>
                 {% if SOCIAL %}
