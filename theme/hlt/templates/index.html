@@ -12,12 +12,17 @@
             </header>
 
             <article>
-                {{ article.content }}{% include 'comments.html' %}
+                {{ article.content }}
+
+                <p id="article-meta">
+                {% for tag in article.tags %} <a class="meta tag" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
+                </p>
             </article>
+
             {% if loop.length > 1 %}
-                <section id="article-list">
-                    <h2>All posts</h2>
-                    <ol>
+            <section id="article-list">
+                <h3>Other posts</h2>
+                <ol>
             {% endif %}
         {# other items #}
         {% else %} 
@@ -25,8 +30,8 @@
         {% endif %}
 {% endfor %}
     {% if loop.length > 1 %}
-    </ol>
-    </section><!-- #article-list -->
+                </ol>
+            </section><!-- #article-list -->
 {% endif %}
 {% else %}
     No posts found.
