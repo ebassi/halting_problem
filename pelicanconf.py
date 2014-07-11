@@ -55,5 +55,5 @@ MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
 THEME = 'theme/hlt'
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = False
+RELATIVE_URLS = True
 WITH_FUTURE_DATES = False
