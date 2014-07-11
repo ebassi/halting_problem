@@ -31,6 +31,8 @@ SOCIAL = (('twitter', 'https://twitter.com/ebassi'),
           ('G+', 'https://plus.google.com/+EmmanueleBassi'),
           ('github', 'https://github.com/ebassi'),)
 
+TYPOGRIFY = True
+
 DEFAULT_PAGINATION = 3
 PAGINATION_PATTERNS = (
     (1, '{base_name}/', '{base_name}/index.html'),
