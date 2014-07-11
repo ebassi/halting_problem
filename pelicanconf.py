@@ -11,6 +11,10 @@ PATH = 'content'
 TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = u'en'
+DEFAULT_DATE = 'fs'
+DEFAULT_CATEGORY = 'misc'
+
+AUTHOR = 'ebassi'
 
 # generate only the full feed
 AUTHOR_FEED_ATOM = None
