@@ -88,10 +88,11 @@ services as well, one that is clear on responsibility and consequences, because
 our current one is a defanged travesty, which was implemented to be the lowest
 common denominator possible. it does not require responsibility for enforcing
 it, and it does not provide accountability for actually respecting it. it is,
-for all intents and purposes, like not having one. it probably was thought as a
-good compromise eight years ago, but it clearly is not enough any more, and it
-makes GNOME look bad. changing the code of conduct is a topic for the new board,
-one I expect will be handled this year; I'll make sure to prod those guys. ;-)
+for all intents and purposes, [like not having one][3]. it probably was thought
+as a good compromise [eight years ago][4], but it clearly is not enough any
+more, and it makes GNOME look bad. changing the code of conduct is a topic for
+the new board, one that I expect will be handled this year; I'll make sure to
+prod those guys. ;-)
 
 - - -
 
@@ -109,3 +110,5 @@ one I expect will be handled this year; I'll make sure to prod those guys. ;-)
 
 [1]: https://mail.gnome.org/archives/guadec-list/2014-July/msg00014.html
 [2]: https://wiki.gnome.org/Foundation/CodeOfConduct
+[3]: https://mail.gnome.org/archives/foundation-list/2009-November/msg00017.html
+[4]: https://mail.gnome.org/archives/foundation-list/2006-May/msg00057.html
