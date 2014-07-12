@@ -21,12 +21,13 @@
 
             {% if loop.length > 1 %}
             <section id="article-list">
-                <h3>Other posts</h2>
+                <h3>Older posts</h2>
                 <ol>
             {% endif %}
         {# other items #}
         {% else %} 
-            <li><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></li>
+            <li><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" class="archive permalink" title="Permalink to {{ article.title|striptags }}">{{
+            article.title }}</a> &mdash; <span class="archive summary">{{ article.summary|striptags }}</span></li>
         {% endif %}
 {% endfor %}
     {% if loop.length > 1 %}

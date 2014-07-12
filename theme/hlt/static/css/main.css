@@ -188,6 +188,21 @@ article {
   padding-top: 80px;
 }
 
+.archive {
+  font-size: 0.8em;
+}
+
+a.permalink {
+  text-decoration: none;
+  border-bottom: #666 1px solid;
+  color: black;
+}
+
+span.summary {
+  color: #aaa;
+  font-size: 0.8em;
+}
+
 footer {
   background: #fff;
   color: #666;
