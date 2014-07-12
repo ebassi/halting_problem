@@ -3,8 +3,7 @@ Date: 2014-06-15 14:36
 Category: life
 Tags: first-psot
 Slug: hello-world
-Summary: First post on my new blog.
-Author: ebassi
+Summary: welcome back
 
 it has been a while.
 

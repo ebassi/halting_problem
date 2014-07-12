@@ -1,7 +1,10 @@
 Title: codes of conduct
 Slug: codes-of-conduct
-Category: gnome
-Tags: essays, free-software, communities, gnome
+Tags: essays, free-software, communities
+Status: draft
+
+you would think that, in 2014, implementing a code of conduct for conferences
+or conventions would not be a controversial topic. sadly, you'd be mistaken.
 
 a discussion on [guadec-list][1] about adopting a code of conduct for GUADEC
 prompted me to write down some thoughts about the issue.
@@ -21,7 +24,7 @@ place this kind of documents.
 
 GNOME, as a community, was if not the first, one of the first high profile free
 software foundations to define and implement a code of conduct. I'll actually
-come back to that later, but this is a point of pride for me.
+come back to that later, but that was a point of pride for me.
 
 yet, I have to admit that my heart sank a bit for every email in the discussion
 on guadec-list, and especially from members of our own community.
@@ -84,13 +87,21 @@ a final thought: I actually want a better code of conduct for GNOME's online
 services as well, one that is clear on responsibility and consequences, because
 our current one is a defanged travesty, which was implemented to be the lowest
 common denominator possible. it does not require responsibility for enforcing
-it, and it does not provide accountability for actually respecting it. that is a
-topic for the new board, one I expect will be handled this year; I'll make sure
-to prod those guys. ;-)
+it, and it does not provide accountability for actually respecting it. it is,
+for all intents and purposes, like not having one. it probably was thought as a
+good compromise eight years ago, but it clearly is not enough any more, and it
+makes GNOME look bad. changing the code of conduct is a topic for the new board,
+one I expect will be handled this year; I'll make sure to prod those guys. ;-)
 
 - - -
 
-#### Photo credits
+#### more information
+
+  1. http://geekfeminism.org/2014/07/10/how-will-our-code-of-conduct-improve-our-harassment-handling/
+  2. http://geekfeminism.org/about/code-of-conduct/
+  3. http://www.ashedryden.com/blog/codes-of-conduct-101-faq
+
+#### photo credits
 
   1. Jonathan Thorne, CC by-nc-2.0
   2. Jenn and Tony Bot, CC by-nc 2.0
