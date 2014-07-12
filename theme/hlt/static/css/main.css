@@ -52,7 +52,7 @@ article hr {
   height: 0;
 }
 
-img {
+article img {
   width: 650px;
   border: none;
 }
@@ -228,6 +228,10 @@ footer li {
 
 footer p {
   text-align: right;
+}
+
+footer p#legal {
+  text-align: center;
 }
 
 footer ul.social {
