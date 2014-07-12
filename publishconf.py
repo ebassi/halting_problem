@@ -20,5 +20,6 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
+#GITHUB_URL = 'https://github.com/ebassi/halting_problem'
 TWITTER_USERNAME = 'ebassi'
 GOOGLE_ANALYTICS = 'UA-51960001-1'
