@@ -18,6 +18,14 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
+STATIC_PATHS = [
+    'images',
+    'extra/robots.txt',
+]
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+}
+
 # Following items are often useful when publishing
 
 #GITHUB_URL = 'https://github.com/ebassi/halting_problem'
