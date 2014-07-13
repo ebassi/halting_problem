@@ -1,6 +1,14 @@
 {% extends "base.html" %}
+
 {% block title %}{{ super() }} : {{ article.title }}{% endblock %}
-{% block content %}        
+
+{% block meta_other %}
+{% if article.status == 'draft' %}
+<meta name="robots" content="noindex"/>
+{% endif %}
+{% endblock %}
+
+{% block content %}
 <header>
     <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> ::
         <a href="{{ SITEURL }}/{{ article.url }}" id="page-title">{{ article.title }}</a></h1>
@@ -8,6 +16,12 @@
     {% if not HIDE_AUTHOR %}<a href="{{ SITEURL }}/author/index.html" id="article-author">written by {{ article.author }}</a>{% endif %}
 </header>
 <article>
+    {% if article.abstract is defined %}
+    <p id="article-abstract">
+      {{ article.abstract|e }}
+    </p>
+    {% endif %}
+
     {{ article.content }}
 
     <p id="article-meta">

@@ -36,7 +36,7 @@ h4 {
   font-size: 0.9em;
 }
 
-time {
+header time {
   color: #c0c0c0;
   font-size: 14px;
   margin-top: 65px;
@@ -159,6 +159,14 @@ header a#article-author {
   padding-left: 10em;
 }
 
+article p#article-abstract {
+  margin-bottom: 48px;
+  color: #aaa;
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+}
+
 article p#article-meta {
   margin-top: 24px;
   font-size: 14px;
@@ -188,8 +196,16 @@ article p#article-meta {
   padding-bottom: 10px;
 }
 
+#tag-list {
+  margin-top: 100px;
+}
+
+#category-list {
+  margin-top: 100px;
+}
+
 article {
-  padding-top: 80px;
+  padding-top: 90px;
 }
 
 .archive {
@@ -205,6 +221,10 @@ a.permalink {
 span.summary {
   color: #aaa;
   font-size: 0.8em;
+}
+
+#article-list li time {
+  color: #c0c0c0;
 }
 
 footer {

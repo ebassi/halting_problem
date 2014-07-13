@@ -14,6 +14,7 @@ DEFAULT_LANG = u'en'
 DEFAULT_DATE = 'fs'
 DEFAULT_CATEGORY = 'misc'
 DEFAULT_DATE_FORMAT = '%B %d, %Y'
+DEFAULT_PAGINATION = 4
 
 AUTHOR = 'ebassi'
 
@@ -38,14 +39,13 @@ SOCIAL = (('twitter', 'https://twitter.com/ebassi'),
 
 TYPOGRIFY = True
 
-DEFAULT_PAGINATION = 3
-PAGINATION_PATTERNS = (
-    (1, '{base_name}/', '{base_name}/index.html'),
-    (2, '{base_name}/page/{number}', '{base_name}/page/{number}/index.html'),
-)
+#PAGINATION_PATTERNS = (
+#    (1, '{base_name}/', '{base_name}/index.html'),
+#    (2, '{base_name}/page/{number}', '{base_name}/page/{number}/index.html'),
+#)
 
 AUTHORS_SAVE_AS = ''
-CATEGORIES_SAVE_AS = ''
+CATEGORIES_SAVE_AS = 'categories/index.html'
 TAGS_SAVE_AS = 'tags/index.html'
 
 ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
@@ -60,8 +60,8 @@ MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
 AUTHOR_URL = ''
 AUTHOR_SAVE_AS = ''
 
-CATEGORY_URL = ''
-CATEGORY_SAVE_AS = ''
+CATEGORY_URL = 'category/{slug}'
+CATEGORY_SAVE_AS = 'category/{slug}/index.html'
 
 TAG_URL = 'tag/{slug}'
 TAG_SAVE_AS = 'tag/{slug}/index.html'

@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
         <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+
         <meta charset="utf-8" />
+        {% block meta_other %}{% endblock %}
+
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
         <link href='http://fonts.googleapis.com/css?family=Exo+2:400,500|Alegreya|Inconsolata' rel='stylesheet' type='text/css'>
         <link href="{{ SITEURL }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
@@ -15,21 +18,25 @@
 </head>
 
 <body>
-{% include 'github.html' %}
+        {% include 'github.html' %}
+
         {% block content %}
         {% endblock %}
 
         <footer>
             <nav>
                 <ul>
-                    <li><a href="{{ SITEURL }}">Home</a> ::</li>
                 {% for page in PAGES %}
                     <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>{% if not loop.last %} ::{% endif %}</li>
                 {% endfor %}
                 {% if tags|length > 1 %}
                     <li>:: <a href="{{ SITEURL }}/tags/">Tags</a></li>
                 {% endif %}
+                {% if categories|length > 1 %}
+                    <li>:: <a href="{{ SITEURL }}/categories/">Categories</a></li>
+                {% endif %}
                 </ul>
+
                 {% if SOCIAL %}
                 <ul class="social widget">
                 {% for name, link in SOCIAL %}

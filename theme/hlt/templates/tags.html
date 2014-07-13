@@ -1,9 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
+<header>
+    <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> :: tags</h1>
+</header>
+
+<section id="tag-list">
 <ul>
 {% for tag, articles in tags %}
     <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }} ({{ articles | count }})</a></li>
 {% endfor %}
 </ul>
+</section>
+
 {% endblock %}

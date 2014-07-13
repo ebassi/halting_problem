@@ -1,11 +1,13 @@
 {% extends "base.html" %}
-{% block content_title %}{% endblock %}
-{% block content %}        
-{% if articles %}
-    {% for article in articles %}        
 
-        {# First item #}
-        {% if loop.first %}
+{% block content_title %}{% endblock %}
+
+{% block content %}        
+{% if articles_page %}
+    {% for article in articles_page.object_list %}
+
+        {# First item in the first page #}
+        {% if not articles_page.has_previous() and loop.first %}
             <header>
                 <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> :: <a href="{{ SITEURL }}/{{ article.url }}" id="page-title">{{ article.title }}</a></h1>
                 {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{% endif %}
@@ -21,19 +23,31 @@
 
             {% if loop.length > 1 %}
             <section id="article-list">
-                <h3>Older posts</h2>
+                <h3>Older posts</h3>
                 <ol>
             {% endif %}
         {# other items #}
         {% else %} 
+            {% if loop.first %}
+            <header>
+                <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a>
+                :: page {{ articles_page.number }}</h1>
+            </header>
+            <section id="article-list">
+                <h3>Older posts</h3>
+                <ol>
+            {% endif %}
             <li><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" class="archive permalink" title="Permalink to {{ article.title|striptags }}">{{
-            article.title }}</a> &mdash; <span class="archive summary">{{ article.summary|striptags }}</span></li>
+            article.title }}</a>,
+            <time class="archive" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time> &mdash;
+            <span class="archive summary">{{ article.summary|striptags }}</span></li>
         {% endif %}
-{% endfor %}
+    {% endfor %}
     {% if loop.length > 1 %}
-                </ol>
-            </section><!-- #article-list -->
-{% endif %}
+        </ol>
+    </section><!-- #article-list -->
+    {% endif %}
+    {% include 'pagination.html' %}
 {% else %}
     No posts found.
 {% endif %}
