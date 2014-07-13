@@ -2,6 +2,7 @@ Title: GTK+ Hackfest 2013
 Date: 2013-04-20
 Slug: gtk-hackfest-2013
 Tags: hackfests, gtk
+Summary: recap of the first two days of the 2013 GTK+ hackfest in Boston
 
 ### Day 1
 
