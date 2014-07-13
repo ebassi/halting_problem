@@ -4,7 +4,7 @@
 
 {% block meta_other %}
 {% if article.status == 'draft' %}
-<meta name="robots" content="noindex"/>
+        <meta name="robots" content="noindex"/>
 {% endif %}
 {% endblock %}
 
@@ -26,7 +26,10 @@
 
     <p id="article-meta">
      {% for tag in article.tags %} <a class="meta tag" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
-   </p>
+    </p>
+
+    <p>
+    {% include 'twitter.html' %}
+    </p>
 </article>
-{% include 'twitter.html' %}
 {% endblock %}
