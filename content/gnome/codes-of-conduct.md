@@ -14,11 +14,11 @@ prompted me to write down some thoughts about the issue.
 
 to be perfectly, honest I never thought an anti-harassment policy would be a
 controversial issue *at all* in 2014, after the rate of adoption of codes of
-conduct, and of anti-harrasment policies, at convention and conferences all over
-the world. there have been high profile cases, and speakers as well as attendees
-have finally started to stand up, and publicly state that they won't attend a
-convention or a conference (even if sponsored) if the organizers do not put in
-place these kind of documents.
+conduct, and of anti-harrasment policies, at convention and conferences all
+over the world. there have been high profile cases, and speakers as well as
+attendees have finally [started to stand up][7], and publicly state that
+they won't attend a convention or a conference (even if sponsored) if the
+organizers do not put in place these kind of documents.
 
 GNOME, as a community, was if not the first, one of the first high profile free
 software foundations to define and implement a code of conduct. I'll actually
@@ -116,6 +116,7 @@ this article and for their suggestions.
 [4]: https://mail.gnome.org/archives/foundation-list/2006-May/msg00057.html
 [5]: http://blogs.gnome.org/marina/
 [6]: http://blogs.gnome.org/gnomg/
+[7]: http://whatever.scalzi.com/2013/07/02/my-new-convention-harassment-policy/
 
 [gf-how]: http://geekfeminism.org/2014/07/10/how-will-our-code-of-conduct-improve-our-harassment-handling/
 [gf-code]: http://geekfeminism.org/about/code-of-conduct/
