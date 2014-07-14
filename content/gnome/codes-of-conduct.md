@@ -18,7 +18,7 @@ conduct, and of anti-harrasment policies, at convention and conferences all over
 the world. there have been high profile cases, and speakers as well as attendees
 have finally started to stand up, and publicly state that they won't attend a
 convention or a conference (even if sponsored) if the organizers do not put in
-place this kind of documents.
+place these kind of documents.
 
 GNOME, as a community, was if not the first, one of the first high profile free
 software foundations to define and implement a code of conduct. I'll actually
