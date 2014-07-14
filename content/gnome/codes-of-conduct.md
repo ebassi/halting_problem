@@ -26,14 +26,14 @@ software foundations to define and implement a code of conduct. I'll actually
 come back to that later, but that was a point of pride for me.
 
 yet, I have to admit that my heart sank a bit for every email in the discussion
-on guadec-list, and especially from members of our own community.
+on guadec-list, especially because they were from members of our own community.
 
 > I do understand that we like our conferences like we like our software:
 > free-as-in-speech, and interesting to work on.
 
 as I said, GNOME already has a [code of conduct][2], pitiful and neutered as it
 may be, and it applies to every venue of communication we have: mailing list,
-IRC, our web servers, and also our *conferences*. to have and implement a code
+our web servers, and also our *conferences*. to have and implement a code
 of conduct is not a per-GUADEC-edition, local-team-only decision to take — and
 how do I know that? because it's the board that approved the code of conduct for
 the mailing lists, IRC, and web servers, and it was not the moderation team, or
@@ -91,15 +91,19 @@ for all intents and purposes, [like not having one][3]. it probably was thought
 as a good compromise [eight years ago][4], but it clearly is not enough any
 more, and it makes GNOME look bad. changing the code of conduct is a topic for
 the new board, one that I expect will be handled this year; I'll make sure to
-prod those guys. ;-)
+prod them. ;-)
 
 - - -
 
+I'd like to thank to [Marina][5] and [Karen][6] for reviewing the draft of
+this article and for their suggestions.
+
 #### more information
 
-  1. http://geekfeminism.org/2014/07/10/how-will-our-code-of-conduct-improve-our-harassment-handling/
-  2. http://geekfeminism.org/about/code-of-conduct/
-  3. http://www.ashedryden.com/blog/codes-of-conduct-101-faq
+  1. [How will our Code of Conduct improve our harassment handling?][gf-how]
+  2. [Code of Conduct][gf-code]
+  3. [Codes of Conduct 101 + FAQ][dryden-faq]
+  4. [Conference anti-harassment][gf-harassment]
 
 #### photo credits
 
@@ -111,3 +115,10 @@ prod those guys. ;-)
 [2]: https://wiki.gnome.org/Foundation/CodeOfConduct
 [3]: https://mail.gnome.org/archives/foundation-list/2009-November/msg00017.html
 [4]: https://mail.gnome.org/archives/foundation-list/2006-May/msg00057.html
+[5]: http://blogs.gnome.org/marina/
+[6]: http://blogs.gnome.org/gnomg/
+
+[gf-how]: http://geekfeminism.org/2014/07/10/how-will-our-code-of-conduct-improve-our-harassment-handling/
+[gf-code]: http://geekfeminism.org/about/code-of-conduct/
+[dryden-faq]: http://www.ashedryden.com/blog/codes-of-conduct-101-faq
+[gf-harassment]: http://geekfeminism.wikia.com/wiki/Conference_anti-harassment
