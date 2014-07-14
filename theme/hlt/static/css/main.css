@@ -13,7 +13,7 @@ body {
 h1 {
   color: #333333;
   font-family: 'Exo 2', Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: normal;
   margin-bottom: 0;
 }
@@ -21,7 +21,7 @@ h1 {
 h2 {
   color: #666666;
   font-family: 'Exo 2', Helvetica, sans-serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 h3 {
@@ -33,7 +33,7 @@ h3 {
 h4 {
   color: #666666;
   font-family: 'Exo 2', Helvetica, sans-serif;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 header time {
@@ -44,7 +44,7 @@ header time {
 
 article hr {
   color: #c0c0c0;
-  width: 20%;
+  width: 25%;
   margin: 50px auto 40px auto;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -128,6 +128,7 @@ pre {
 header {
   position: fixed;
   padding-bottom: 12px;
+  margin-bottom: 24px;
   background: rgba(255, 255, 255, 0.97);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   z-index: 500;
@@ -160,11 +161,14 @@ header a#article-author {
 }
 
 article p#article-abstract {
+  margin-top: 24px;
   margin-bottom: 48px;
   color: #aaa;
   font-size: 0.8em;
   font-style: italic;
   text-align: center;
+  padding-bottom: 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 article p#article-meta {
@@ -205,7 +209,7 @@ article p#article-meta {
 }
 
 article {
-  padding-top: 90px;
+  padding-top: 120px;
 }
 
 .archive {
@@ -232,7 +236,9 @@ footer {
   color: #666;
   font-size: 14px;
   letter-spacing: 4px;
-  margin: 0 20px;
+  margin: 1em 20px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 footer a {
@@ -255,6 +261,13 @@ footer p {
 }
 
 footer p#legal {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding-top: 12px;
+  margin-top: 2em;
+  text-align: center;
+}
+
+footer ul.pages {
   text-align: center;
 }
 
