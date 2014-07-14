@@ -103,6 +103,8 @@ this article and for their suggestions.
   2. [Code of Conduct][gf-code]
   3. [Codes of Conduct 101 + FAQ][dryden-faq]
   4. [Conference anti-harassment][gf-harassment]
+  5. [My New Convention Harassment Policy][7]
+  6. [Convention Harassment Policy Follow-Up][scalzi-con]
 
 #### photo credits
 
@@ -122,3 +124,4 @@ this article and for their suggestions.
 [gf-code]: http://geekfeminism.org/about/code-of-conduct/
 [dryden-faq]: http://www.ashedryden.com/blog/codes-of-conduct-101-faq
 [gf-harassment]: http://geekfeminism.wikia.com/wiki/Conference_anti-harassment
+[scalzi-con]: http://whatever.scalzi.com/2013/07/05/convention-harassment-policy-follow-up/
