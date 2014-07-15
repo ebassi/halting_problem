@@ -5,7 +5,14 @@
     <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> ::
         <a href="{{ SITEURL }}/{{ page.url }}" id="page-title">{{ page.title }}</a></h1>
 </header>
-<article>    
+
+{% if page.authoravatar %}
+<div class="avatar">
+  <img src="{{ SITEURL }}/images/{{ page.authoravatar }}" alt="{{ page.author }}"/>
+</div>
+{% endif %}
+
+<article>
     {{ page.content }}
 </article>
 {% endblock %}
