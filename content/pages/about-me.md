@@ -1,6 +1,7 @@
 Title: About
 Slug: about-me
 Author: ebassi
+AuthorAvatar: ebassi-hackergotchi.png
 
 Emmanuele Bassi.
 
