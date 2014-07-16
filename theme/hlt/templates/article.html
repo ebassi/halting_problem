@@ -24,9 +24,20 @@
 
     {{ article.content }}
 
-    <p id="article-meta">
-     {% for tag in article.tags %} <a class="meta tag" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
-    </p>
+    <div id="article-meta">
+      {% for tag in article.tags %} <a class="meta tag" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
+    </div>
+
+    {% if article.related_posts %}
+    <div class="related">
+      <h4>related posts</h4>
+      <ul>
+      {% for related_post in article.related_posts %}
+        <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
 
     <p>
     {% include 'twitter.html' %}

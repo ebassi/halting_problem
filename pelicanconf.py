@@ -68,6 +68,8 @@ TAG_SAVE_AS = 'tag/{slug}/index.html'
 
 THEME = 'theme/hlt'
 
+PLUGINS = ['plugins.related_posts']
+
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 WITH_FUTURE_DATES = False
