@@ -16,28 +16,32 @@
     {% if not HIDE_AUTHOR %}<a href="{{ SITEURL }}/author/index.html" id="article-author">written by {{ article.author }}</a>{% endif %}
 </header>
 <article>
-    {% if article.abstract is defined %}
-    <p id="article-abstract">
-      {{ article.abstract|e }}
-    </p>
-    {% endif %}
+    <section>
+        {% if article.abstract is defined %}
+        <p id="article-abstract">
+        {{ article.abstract|e }}
+        </p>
+        {% endif %}
 
-    {{ article.content }}
+        <div class="content">
+        {{ article.content }}
+        </div>
 
-    <p id="article-meta">
-      {% for tag in article.tags %} <a class="meta tag" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
-    </p>
+        <p id="article-meta">
+        {% for tag in article.tags %} <a class="meta tag" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
+        </p>
 
-    {% if article.related_posts %}
-    <div class="related">
-      <h4>related posts</h4>
-      <ul>
-      {% for related_post in article.related_posts %}
-        <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
-      {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
+        {% if article.related_posts %}
+        <div class="related">
+            <h4>related posts</h4>
+            <ul>
+            {% for related_post in article.related_posts %}
+                <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </section>
 
     <p>
     {% include 'twitter.html' %}

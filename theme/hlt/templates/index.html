@@ -14,11 +14,15 @@
             </header>
 
             <article>
-                {{ article.content }}
+                <section>
+                    <div class="content">
+                    {{ article.content }}
+                    </div>
 
-                <p id="article-meta">
-                {% for tag in article.tags %} <a class="meta tag" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
-                </p>
+                    <p id="article-meta">
+                    {% for tag in article.tags %} <a class="meta tag" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
+                   </p>
+                </section>
             </article>
 
             <section id="article-list">

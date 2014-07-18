@@ -6,13 +6,19 @@
         <a href="{{ SITEURL }}/{{ page.url }}" id="page-title">{{ page.title }}</a></h1>
 </header>
 
-{% if page.authoravatar %}
-<div class="avatar">
-  <img src="{{ SITEURL }}/images/{{ page.authoravatar }}" alt="{{ page.author }}"/>
-</div>
-{% endif %}
+<section>
 
-<article>
-    {{ page.content }}
-</article>
+    {% if page.authoravatar %}
+    <div class="avatar">
+        <img src="{{ SITEURL }}/images/{{ page.authoravatar }}" alt="{{ page.author }}"/>
+    </div>
+    {% endif %}
+
+    <article>
+        <div class="content">
+        {{ page.content }}
+        </div>
+    </article>
+
+</section>
 {% endblock %}
