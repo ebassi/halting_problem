@@ -16,7 +16,7 @@ suffer too much, for too long", usually spoken in the general direction of a
 server somewhere.
 
 at the time, I only had some space on a web server provided by my ISP, which
-meant no fancy CGI stuff, or database, or dynamic web page. [WordPress][wp]
+meant no fancy CGI stuff, or database, or dynamic web pages. [WordPress][wp]
 was still known as "b2", and it had pretty much the same feature-to-security
 ratio as it has today. I had the option of using one of the budding blogging
 platforms of the time, but they were pretty much consistently terrible, and
@@ -28,7 +28,8 @@ allowed me to write modules to abstract scripts. I was almost at the
 "re-engineer my DNA to allow me to create better copies of myself" step of
 the process when I decided I *actually* needed a comment form — see above,
 re: naïve 20-something — which meant getting a some actual web space
-somewhere. clearly, there was something wrong with me.
+somewhere, and maybe running a CMS platform. clearly, there was something
+wrong with me.
 
 fast forward more than 10 years to February 2013, and me waking up in Sydney
 with the hosting provider for my private server sending me an incident
