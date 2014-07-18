@@ -65,6 +65,8 @@ div.avatar img {
 
 article img {
   width: 650px;
+  max-width: 100%;
+  height: auto;
   border: none;
 }
 
