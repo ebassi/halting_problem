@@ -1,6 +1,5 @@
 Title: building a website with Pelican
 Slug: building-a-website-with-pelican
-Status: draft
 Category: life
 Tags: essays, pelican, blagging, things I do so you don't have to, web
 Abstract: creating complex, structured websites is a pain, that's why somebody invented a language to help out doing that; except that the language is PHP and it's full of bees and snakes, and if you're extremely lucky, it just helps some kid in Russia to take over your server to mine bitcoin or scam you out of your credit card details.
@@ -95,10 +94,10 @@ I thus settled for [Pelican][pelican-web].
 
 ### installation
 
-first of all, I ignored the fact that my distribution packages Pelican, and
-I cordoned off the whole thing into its own prefix using `virtualenv`
-instead; if I had to nuke the site from orbit, I just wanted to be sure not
-to blow up the rest of my system as well.
+first of all, I ignored the fact that [my distribution][fedora-web] packages
+Pelican, and I cordoned off the whole thing into its own prefix using
+`virtualenv` instead; if I had to nuke the site from orbit, I just wanted to
+be sure not to blow up the rest of my system as well.
 
     :::console
     $ virtualenv ~/Source/pelican
@@ -123,40 +122,52 @@ default, I had to install the `markdown` module in the same environment:
 
     :::console
     (pelican) $ pip install markdown
-    ...
 
-and I was ready to go.
+and I (mostly) was ready to go.
 
 sure, I had to fix a couple of things in the configuration, and I had to
 tweak the theme a bit to turn it into something that was not a throwback to
-the simpler times of Geocities, circa 1997; nevertheless, it was pretty much
-all there, and it allowed me to hit the ground running at a moderate speed.
+the simpler times of Geocities, circa 1997; nevertheless, everything I
+needed was pretty much all there out of the box, and it allowed me to hit
+the ground running at a moderate speed.
 
 - - -
 
 ### configuration
 
-the default configuration is fairly sensible, so I only had to tweak things
-like the default URL for articles, and the pagination settings. I had to set
-a couple of defaults, to avoid adding too many metadata in the article
-documents themselves:
+the default Pelican configuration is fairly sensible, so I only had to tweak
+things like the default URL for articles, and the pagination settings. I had
+to set a couple of defaults, to avoid adding too many metadata in the
+article documents themselves:
 
     :::python
+    # base URL of the website
+    SITEURL = 'http://www.bassi.io'
+
     # I'm going to be the only author
     AUTHOR = ebassi
 
-    # all the articles are going to be located here
+    # all the articles are going to be located in this directory
     PATH = 'content'
 
     # use the file's mtime to get the date
     DEFAULT_DATE = 'fs'
+
     # use a bland default category; content found in folders under the
     # 'content' directory will be placed in the same category as the
-    # directory name by default anyway
+    # directory name by default, anyway
     DEFAULT_CATEGORY = 'life'
 
     # all images are under this directory
     STATIC_PATHS = [ 'images' ]
+
+    # when generating the pages, use relative URLs; this is only
+    # useful when testing locally; when generating the pages to be
+    # pushed to the remote server you want this setting to be False
+    RELATIVE_URLS = True
+
+    # my own little theme
+    THEME = [ 'theme/hlt' ]
 
 as I said, `pelican-quickstart` creates two separate configuration files:
 
@@ -201,27 +212,52 @@ clean up the typography of the text before publishing it:
     (pelican) $ pip install typogrify
     ...
 
-and had to enable it in the configuration:
+and enabled it in the configuration:
 
     :::python
     TYPOGRIFY = True
 
-but that's pretty much it.
+I did a couple more tweaks for the on disk layout of the website, which gets
+reflected into the URLs:
+
+    :::python
+    # show the full date in the URL
+    ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+    ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+
+    # and make the archives for year and month be accessible just
+    # by tweaking the URL of each article
+    YEAR_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/index.html'
+    MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
+
+    # pages are without a date
+    PAGE_URL = 'pages/{slug}/'
+    PAGE_SAVE_AS = 'pages/{slug}/index.html'
+
+    # one page per category
+    CATEGORY_URL = 'category/{slug}'
+    CATEGORY_SAVE_AS = 'category/{slug}/index.html'
+
+    # one page per tag
+    TAG_URL = 'tag/{slug}'
+    TAG_SAVE_AS = 'tag/{slug}/index.html'
+
+that's pretty much it.
 
 - - -
 
 ### theming
 
-the generated website uses the default `simple` theme; I decided to that one
-of the [Pelican themes][pelican-themes] off of GitHub and [forked
-it][hlt-theme] to suit my own lack of taste. the template format is
-[Jinja][jinja-web], and it's not really hard to build a decent set of pages
-out of that.
+the generated website uses the default `simple` theme, but it was really too
+simple for me, so I decided to take one of the many [Pelican
+themes][pelican-themes] off of GitHub, and [fork it][hlt-theme] to suit my
+own lack of taste. the template format is [Jinja][jinja-web], and it's not
+really hard to build a decent set of pages out of that.
 
 in the process, I ended up getting up to speed with modern HTML and CSS —
 the last time I wrote some web page, HTML 4 was all the rage, and we had
-this new thing called XHTML 1.0, so you can guess I had some learning to do.
-I guess having spent almost a year learning how the CSS machinery in a
+this new thing called XHTML 1.0, so you can guess I had some catching up to
+do. I guess having spent almost a year learning how the CSS machinery in a
 modern web browser actually works helped me a bit, in this regard.
 
 Pelican requires templates for specific pages, but what goes inside them is
@@ -263,7 +299,7 @@ using:
     :::console
     (pelican) $ ./develop_server.sh stop
 
-once you decide to publish your site, you can use one of the publishing
+if you decide to publish your site, you can use one of the publishing
 targets inside the `Makefile`, and fill out the settings variables at the
 top; there are targets for FTP, SFTP, rsync, rackspace, Dropbox, and GitHub
 pages.
@@ -302,4 +338,5 @@ like flickr or YouTube, a bit easier.
 [pelican-themes]: https://github.com/getpelican/pelican-themes
 [pelican-plugins]: https://github.com/getpelican/pelican-plugins
 [jinja-web]: http://jinja.pocoo.org/
+[fedora-web]: http://fedoraproject.org
 [hlt-theme]: https://github.com/ebassi/halting_problem/tree/master/theme/hlt
