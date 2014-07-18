@@ -285,6 +285,12 @@ span.summary {
   color: #c0c0c0;
 }
 
+.twitter {
+  margin: 0 auto;
+  width: 650px;
+  text-align: center;
+}
+
 footer {
   background: #fff;
   color: #666;
