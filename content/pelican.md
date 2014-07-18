@@ -4,6 +4,7 @@ Category: life
 Tags: essays, pelican, blagging, things I do so you don't have to, web
 Abstract: creating complex, structured websites is a pain, that's why somebody invented a language to help out doing that; except that the language is PHP and it's full of bees and snakes, and if you're extremely lucky, it just helps some kid in Russia to take over your server to mine bitcoin or scam you out of your credit card details.
 Summary: if the alternative to nothing is a monstrosity written in PHP and using MySQL, then nothingness is a great state in which we ought to be
+Date: 2014-07-18
 
 once upon a time, I wrote a static website generator.
 

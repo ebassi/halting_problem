@@ -3,6 +3,7 @@ Slug: codes-of-conduct
 Tags: essays, free-software, communities
 Summary: a discussion on guadec-list about adopting a code of conduct for GUADEC prompted me to write down some thoughts about the issue
 Abstract: you would think that, in 2014, implementing a code of conduct for conferences or conventions would not be a controversial topic. sadly, you'd also be mistaken. there are various contrarian positions about implementing anti-harassment policies; most, if not all of those positions are wrong.
+Date: 2014-07-12
 
 a discussion on [guadec-list][1] about adopting a code of conduct for GUADEC
 prompted me to write down some thoughts about the issue.
