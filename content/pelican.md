@@ -182,7 +182,7 @@ the generation of all Atom feeds when testing the site locally:
 
     :::python
     # from pelicanconf.py
-    # disable all feeds
+    # disable ALL the feeds
     FEED_ALL_ATOM = None
     AUTHOR_FEED_ATOM = None
     AUTHOR_FEED_RSS = None
