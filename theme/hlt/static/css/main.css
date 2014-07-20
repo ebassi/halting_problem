@@ -118,8 +118,21 @@ div.avatar img {
 }
 
 article div.content {
+  position: relative;
+  right: 0%;
+  transition: right 0.2s ease 0s;
   margin: 0 auto;
   width: 650px;
+  clear: both;
+}
+
+article figure {
+  position: relative;
+  margin-bottom: 30px;
+  clear: both;
+  outline: medium none;
+  box-sizing: border-box;
+  display: block;
 }
 
 article img {
@@ -138,6 +151,10 @@ blockquote {
   font-style: italic;
 }
 
+div.content {
+  word-wrap: break-word;
+}
+
 div.content p {
   line-height: 30px;
   margin: 30px auto;
@@ -146,9 +163,9 @@ div.content p {
 
 .image-caption {
   position: absolute;
-  left: 170px;
-  width: 150px;
-  font-size: 14px;
+  left: -175px;
+  width: 145px;
+  font-size: 12px;
   margin-top: 0;
   text-align: right;
   z-index: 300;
