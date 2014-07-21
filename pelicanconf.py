@@ -18,6 +18,10 @@ DEFAULT_PAGINATION = 4
 
 AUTHOR = 'ebassi'
 
+AUTHORS = {
+  'ebassi': ( 'Emmanuele Bassi', 'geek, husband, lover, software developer, londoner. not necessarily in that order.', 'ebassi.png' ),
+}
+
 # generate only the full feed
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
