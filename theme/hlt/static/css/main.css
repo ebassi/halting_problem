@@ -315,19 +315,28 @@ footer {
   letter-spacing: 4px;
   margin: 1em auto;
   padding-top: 12px;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
   width: 650px;
+}
+
+footer p.author {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+footer div.author-data {
+  padding-left: 2em;
+}
+
+footer span.author-name {
+  font-weight: 400;
+}
+
+footer span.author-bio {
+  font-style: italic;
 }
 
 footer a {
   border-bottom: none;
   color: #c0c0c0;
-}
-
-footer ul.social li a {
-  color: #aaa;
-  border-bottom: #666 1px solid;
-  text-decoration: none;
 }
 
 footer li {
@@ -346,11 +355,19 @@ footer p#legal {
 }
 
 footer ul.pages {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
   text-align: center;
+  padding-top: 24px;
 }
 
 footer ul.social {
   text-align: center;
+}
+
+footer ul.social li a, footer ul.pages li a {
+  color: #aaa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  text-decoration: none;
 }
 
 ul.social li::before {

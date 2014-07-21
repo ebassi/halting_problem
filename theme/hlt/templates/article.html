@@ -13,8 +13,9 @@
     <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> ::
         <a href="{{ SITEURL }}/{{ article.url }}" id="page-title">{{ article.title }}</a></h1>
     {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{% endif %}
-    {% if not HIDE_AUTHOR %}<a href="{{ SITEURL }}/author/index.html" id="article-author">written by {{ article.author }}</a>{% endif %}
+    {% if not HIDE_AUTHOR %}<a href="{{ SITEURL }}/author/{{ article.author }}/" id="article-author">written by {{ article.author }}</a>{% endif %}
 </header>
+
 <article>
     <section>
         {% if article.abstract is defined %}
@@ -48,3 +49,5 @@
     </p>
 </article>
 {% endblock %}
+
+{% block author_desc %} {% include 'author.html' %} {% endblock %}
