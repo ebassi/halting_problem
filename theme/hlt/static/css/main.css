@@ -69,6 +69,10 @@ header a#article-author {
   padding-left: 10em;
 }
 
+header div.page-time {
+  text-align: center;
+}
+
 header time {
   color: #c0c0c0;
   font-size: 14px;
