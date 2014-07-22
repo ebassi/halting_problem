@@ -245,6 +245,22 @@ article div.related {
   text-align: left;
 }
 
+article div.footnote {
+  font-size: 0.8em;
+  color: #c0c0c0;
+  line-height: 1em;
+}
+
+div.footnote ol {
+  margin: 0;
+  padding: 0;
+}
+
+div.footnote ol li {
+  margin: 0;
+  padding: 0;
+}
+
 .meta {
   border: none;
   text-decoration: none;
