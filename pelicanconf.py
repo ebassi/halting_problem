@@ -53,7 +53,7 @@ TYPOGRIFY = True
 #    (2, '{base_name}/page/{number}', '{base_name}/page/{number}/index.html'),
 #)
 
-AUTHORS_SAVE_AS = ''
+AUTHORS_SAVE_AS = 'authors/index.html'
 CATEGORIES_SAVE_AS = 'categories/index.html'
 TAGS_SAVE_AS = 'tags/index.html'
 
@@ -66,8 +66,8 @@ PAGE_SAVE_AS = 'pages/{slug}/index.html'
 YEAR_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
 
-AUTHOR_URL = ''
-AUTHOR_SAVE_AS = ''
+AUTHOR_URL = 'author/{slug}/'
+AUTHOR_SAVE_AS = 'author/{slug}/index.html'
 
 CATEGORY_URL = 'category/{slug}'
 CATEGORY_SAVE_AS = 'category/{slug}/index.html'
