@@ -72,7 +72,11 @@ TAG_SAVE_AS = 'tag/{slug}/index.html'
 
 THEME = 'theme/hlt'
 
-PLUGINS = ['plugins.related_posts']
+PLUGINS = [
+  'plugins.related_posts',
+  'plugins.liquid_tags.img',
+  'plugins.liquid_tags.figure',
+]
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
