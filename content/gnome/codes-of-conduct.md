@@ -11,14 +11,7 @@ prompted me to write down some thoughts about the issue.
 > GNOME, as a community, was if not the first, one of the first high profile
 > free software foundations to define and implement a code of conduct.
 
-<figure>
-  <figcaption class="image-caption">
-    <p>Photo credit: Jonathan Thorne, CC by-nc-2.0</p>
-  </figcaption>
-  <div>
-    <img src="{filename}/images/us-constitution.jpg"/>
-  </div>
-</figure>
+{% figure {filename}/images/us-constitution.jpg Photo credit: Jonathan Thorne, CC by-nc-2.0 %}
 
 to be perfectly, honest I never thought an anti-harassment policy would be a
 controversial issue *at all* in 2014, after the rate of adoption of codes of
@@ -70,14 +63,7 @@ source community at large. they are based on a fairly obvious misunderstanding;
 the code of conduct is not a sword for preventing people from misbehaving: it's
 a *shield* for people being the object of discrimination and harassment.
 
-<figure>
-  <figcaption class="image-caption">
-    <p>Photo credit: Jenn and Tony Bot, CC by-nc-2.0</p>
-  </figcaption>
-  <div>
-    <img src="{filename}/images/sword-and-shield.jpg"/>
-  </div>
-</figure>
+{% figure {filename}/images/sword-and-shield.jpg Photo credit: Jenn and Tony Bot, CC by-nc-2.0 %}
 
 I am lucky enough, and privileged enough, that I have not been discriminated for
 who I am, what I like, who I like, what I do, or how I do it. others are not in
@@ -94,14 +80,7 @@ expect, and I'd be *foolish* to do so, that new people that have not been at
 GUADEC yet, or have been newly introduced to our community, also posses that
 knowledge.
 
-<figure>
-  <figcaption class="image-caption">
-    <p>Photo credit: diffendale, CC by-nc-sa 2.0</p>
-  </figcaption>
-  <div>
-    <img src="{filename}/images/shield.jpg"/>
-  </div>
-</figure>
+{% figure {filename}/images/shield.jpg Photo credit: diffendale, CC by-nc-sa 2.0 %}
 
 a final thought: I actually want a better code of conduct for GNOME's online
 services as well, one that is clear on responsibility and consequences, because
