@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header>
+    <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> :: authors</h1>
+</header>
+
+<section class="content-list">
+<ul>
+{% for name, articles in authors %}
+    <li><a href="{{ SITEURL }}/{{ name.url }}">{{ name }} ({{ articles | count }}) →</a></li>
+{% endfor %}
+</ul>
+</section>
+
+{% endblock %}

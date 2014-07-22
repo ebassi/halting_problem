@@ -1,0 +1,18 @@
+{% if AUTHORS %}
+{% if AUTHORS[article.author] %}
+{% set name, bio, avatar = AUTHORS[article.author] %}
+<p class="author widget">
+  <table>
+    <tr>
+      <td><img src="{{ SITEURL }}/images/{{ avatar }}"/></td>
+      <td>
+  <div class="author-data">
+  <span class="author-name"><a href="{{ SITEURL }}/pages/about-me/">{{ name }}</a></span> &mdash;
+  <span class="author-bio">{{ bio }}</span>
+  </div>
+      </td>
+    </tr>
+  </table>
+</p>
+{% endif %}
+{% endif %}

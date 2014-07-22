@@ -273,6 +273,17 @@ div.footnote ol li {
   margin: 0.1em 0.4em;
 }
 
+.content-list {
+  margin: 0 auto;
+  width: 650px;
+}
+
+.content-list ul li {
+  line-height: 1.2em;
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
 #article-list {
   margin: 0 auto;
   width: 650px;
@@ -282,6 +293,11 @@ div.footnote ol li {
   line-height: 1.2em;
   list-style-type: none;
   padding-bottom: 10px;
+}
+
+#author-list {
+  margin: 0 auto;
+  width: 650px;
 }
 
 #tag-list {

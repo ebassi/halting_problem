@@ -5,10 +5,10 @@
     <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> :: tags</h1>
 </header>
 
-<section id="tag-list">
+<section class="content-list">
 <ul>
 {% for tag, articles in tags %}
-    <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }} ({{ articles | count }})</a></li>
+    <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }} ({{ articles | count }}) →</a></li>
 {% endfor %}
 </ul>
 </section>
