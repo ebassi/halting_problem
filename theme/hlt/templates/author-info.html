@@ -1,13 +1,19 @@
 {% if AUTHORS %}
 {% if AUTHORS[article.author] %}
-{% set name, bio, avatar = AUTHORS[article.author] %}
+{% set name, bio, avatar, link = AUTHORS[article.author] %}
 <p class="author widget">
   <table>
     <tr>
       <td><img src="{{ SITEURL }}/images/{{ avatar }}"/></td>
       <td>
   <div class="author-data">
-  <span class="author-name"><a href="{{ SITEURL }}/pages/about-me/">{{ name }}</a></span> &mdash;
+  <span class="author-name">
+    {% if not link %}
+    <a href="{{ SITEURL }}/{{ article.author.url }}">{{ name }}</a>
+    {% else %}
+    <a href="{{ SITEURL }}/{{ link }}">{{ name }}</a>
+    {% endif %}
+  </span> &mdash;
   <span class="author-bio">{{ bio }}</span>
   </div>
       </td>
