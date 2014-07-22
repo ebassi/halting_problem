@@ -15,7 +15,7 @@ see you at GUADEC!
 
 <figure>
   <div style="text-align:center;margin: 0 auto;">
-    <img style="max-width:100%;width:256px;height:auto;" src="{filename}/images/guadec-2014-badge-large.png"/>
+    <a style="border:none" href="https://www.guadec.org"><img style="max-width:100%;width:256px;height:auto;" src="{filename}/images/guadec-2014-badge-large.png"/></a>
   </div>
 </figure>
 
