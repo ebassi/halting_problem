@@ -19,7 +19,12 @@ DEFAULT_PAGINATION = 4
 AUTHOR = 'ebassi'
 
 AUTHORS = {
-  'ebassi': ( 'Emmanuele Bassi', 'geek, husband, lover, software developer, londoner. not necessarily in that order.', 'ebassi.png' ),
+  'ebassi': (
+    'Emmanuele Bassi',
+    'geek, husband, lover, software developer, londoner. not necessarily in that order.',
+    'ebassi.png',
+    'pages/about-me'
+  ),
 }
 
 # generate only the full feed
