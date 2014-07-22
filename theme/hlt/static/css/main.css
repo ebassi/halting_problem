@@ -329,6 +329,10 @@ a.permalink {
   color: black;
 }
 
+a.permalink::after {
+  content: "→";
+}
+
 span.summary {
   color: #aaa;
   font-size: 0.8em;
