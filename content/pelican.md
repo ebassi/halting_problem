@@ -142,34 +142,7 @@ things like the default URL for articles, and the pagination settings. I had
 to set a couple of defaults, to avoid adding too many metadata in the
 article documents themselves:
 
-    :::python
-    # base URL of the website
-    SITEURL = 'http://www.bassi.io'
-
-    # I'm going to be the only author
-    AUTHOR = ebassi
-
-    # all the articles are going to be located in this directory
-    PATH = 'content'
-
-    # use the file's mtime to get the date
-    DEFAULT_DATE = 'fs'
-
-    # use a bland default category; content found in folders under the
-    # 'content' directory will be placed in the same category as the
-    # directory name by default, anyway
-    DEFAULT_CATEGORY = 'life'
-
-    # all images are under this directory
-    STATIC_PATHS = [ 'images' ]
-
-    # when generating the pages, use relative URLs; this is only
-    # useful when testing locally; when generating the pages to be
-    # pushed to the remote server you want this setting to be False
-    RELATIVE_URLS = True
-
-    # my own little theme
-    THEME = [ 'theme/hlt' ]
+{% include_code pelicanconf.py lang:python lines:5-42 %}
 
 as I said, `pelican-quickstart` creates two separate configuration files:
 
@@ -182,26 +155,11 @@ and `publishconf.py` can perform the expensive operations needed only when
 pushing the generated pages to the remote server. for instance, I disable
 the generation of all Atom feeds when testing the site locally:
 
-    :::python
-    # from pelicanconf.py
-    # disable ALL the feeds
-    FEED_ALL_ATOM = None
-    AUTHOR_FEED_ATOM = None
-    AUTHOR_FEED_RSS = None
-    CATEGORY_FEED_ATOM = None
-    CATEGORY_FEED_RSS = None
-    TRANSLATION_FEED_ATOM = None
-    TRANSLATION_FEED_RSS = None
-    TAG_FEED_ATOM = None
-    TAG_FEED_RSS = None
+{% include_code pelicanconf.py lang:python lines:54-62 %}
 
 and enable the desired feeds when publishing:
 
-    :::python
-    # from publishconf.py
-    # generate the full feed and the per-category feed
-    FEED_ALL_ATOM = 'feeds/all.atom.xml'
-    CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+{% include_code publishconf.py lang:python lines:18-20 %}
 
 this also means that `pelicanconf.py` can contain the `RELATIVE_URLS`
 variable and set it to `True`, whereas the same variable can be set to
@@ -222,27 +180,7 @@ and enabled it in the configuration:
 I did a couple more tweaks for the on disk layout of the website, which gets
 reflected into the URLs:
 
-    :::python
-    # show the full date in the URL
-    ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-    ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
-
-    # and make the archives for year and month be accessible just
-    # by tweaking the URL of each article
-    YEAR_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/index.html'
-    MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
-
-    # pages are without a date
-    PAGE_URL = 'pages/{slug}/'
-    PAGE_SAVE_AS = 'pages/{slug}/index.html'
-
-    # one page per category
-    CATEGORY_URL = 'category/{slug}'
-    CATEGORY_SAVE_AS = 'category/{slug}/index.html'
-
-    # one page per tag
-    TAG_URL = 'tag/{slug}'
-    TAG_SAVE_AS = 'tag/{slug}/index.html'
+{% include_code pelicanconf.py lang:python lines:76-101 %}
 
 that's pretty much it.
 
