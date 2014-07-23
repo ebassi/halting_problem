@@ -151,10 +151,23 @@ article figure.code {
 figure.code figcaption {
   width: 650px;
   max-width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-image: none;
+  border-color: #cbcbcb #a5a5a5;
+  background: linear-gradient(to bottom, #a5a5a5, #cbcbcb);
   color: white;
-  font-size: 12px;
-  text-align: right;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: 0px 1px 0px #999;
+}
+
+figure.code figcaption span::before {
+  content: '« ';
+}
+
+figure.code figcaption span::after {
+  content: ' »';
 }
 
 figure.code div.highlight pre {
@@ -162,13 +175,16 @@ figure.code div.highlight pre {
   padding: 12px;
 }
 
-figure.code figcaption span::after {
-  content: " — ";
-}
-
 figure.code figcaption a {
   color: white;
-  margin-right: 1em;
+  position: absolute;
+  right: 0.8em;
+  z-index: 1;
+  border: none;
+}
+
+figure.code figcaption a::after {
+  content: " ↓ ";
 }
 
 article img {
