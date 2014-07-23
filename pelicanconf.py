@@ -77,10 +77,18 @@ TAG_SAVE_AS = 'tag/{slug}/index.html'
 
 THEME = 'theme/hlt'
 
+CODE_DIR = 'code'
+
+STATIC_PATHS = [
+    'images',
+    'code',
+]
+
 PLUGINS = [
   'plugins.related_posts',
-  'plugins.liquid_tags.img',
   'plugins.liquid_tags.figure',
+  'plugins.liquid_tags.img',
+  'plugins.liquid_tags.include_code',
 ]
 
 # Uncomment following line if you want document-relative URLs when developing

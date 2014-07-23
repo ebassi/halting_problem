@@ -20,8 +20,10 @@ DELETE_OUTPUT_DIRECTORY = True
 
 STATIC_PATHS = [
     'images',
+    'code',
     'extra/robots.txt',
 ]
+
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
 }
