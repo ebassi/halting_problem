@@ -139,6 +139,38 @@ article figure {
   display: block;
 }
 
+article figure.code {
+  position: relative;
+  margin: 0px;
+  clear: both;
+  outline: none;
+  box-sizing: border-box;
+  display: block;
+}
+
+figure.code figcaption {
+  width: 650px;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 12px;
+  text-align: right;
+}
+
+figure.code div.highlight pre {
+  margin: 0px;
+  padding: 12px;
+}
+
+figure.code figcaption span::after {
+  content: " — ";
+}
+
+figure.code figcaption a {
+  color: white;
+  margin-right: 1em;
+}
+
 article img {
   width: 650px;
   max-width: 100%;
@@ -218,6 +250,7 @@ tt, pre {
   background-color: #fafafa;
   font-family: 'Inconsolata', Monaco, monospace;
   line-height: 1.2em;
+  box-shadow: 0px 1px rgba(0, 0, 0, 0.5);
 }
 
 code {
