@@ -146,6 +146,7 @@ article figure.code {
   outline: none;
   box-sizing: border-box;
   display: block;
+  margin-bottom: 30px;
 }
 
 figure.code figcaption {
