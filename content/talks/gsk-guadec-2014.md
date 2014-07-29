@@ -245,9 +245,9 @@ chaining patterns in high level languages, for instance:
     ::js
     super_layer.add_child(avatar_icon)
                .add_child(name_label)
-	       .add_child(address_label)
-	       .add_child(telephone_label)
-	       .add_child(presence_icon);
+               .add_child(address_label)
+               .add_child(telephone_label)
+               .add_child(presence_icon);
 
 the other parts of the API match the description of the `GskLayer` class;
 geometry manipulation:
