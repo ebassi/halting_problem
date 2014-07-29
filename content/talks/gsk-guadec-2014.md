@@ -204,10 +204,10 @@ that looks like:
     GdkRGBA color = { 1.0, 0.0, 0.0, 1.0 };
 
     gsk_layer_add_child (super_layer,
-    			 g_object_new (GSK_TYPE_LAYER,
-			               "frame", rect,
-				       "background-color", color,
-			               NULL));
+                         g_object_new (GSK_TYPE_LAYER,
+                                       "frame", rect,
+                                       "background-color", color,
+                                       NULL));
 
 without leaking in the bindings. it would still look a bit odd with regards
 to the rest of our API.
