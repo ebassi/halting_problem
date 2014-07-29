@@ -82,6 +82,7 @@ CODE_DIR = 'code'
 STATIC_PATHS = [
     'images',
     'code',
+    'talks',
 ]
 
 PLUGINS = [
