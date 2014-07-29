@@ -4,7 +4,8 @@
 
 {% block content %}        
 {% if articles_page %}
-    {% for article in articles_page.object_list %}
+    {# we skip the 'talks' category just because we can #}
+    {% for article in articles_page.object_list if not article.category in [ "talks", ] %}
 
         {# we only expand the first item in the first page #}
         {% if not articles_page.has_previous() and loop.first %}
