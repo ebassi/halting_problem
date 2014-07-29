@@ -29,10 +29,10 @@ typedef struct _GskLayerClass           GskLayerClass;
  * traversed from that point for both geometry and paiting.
  *
  * The layers hierarchy is defined in terms of a parent-children
- * relationship; each layer has a parent element, unless that layer
- * is the top-level layer attached to a windowing system surface.
+ * relationship; each layer has a #GskLayer:parent element, unless that
+ * layer is the top-level layer attached to a windowing system surface.
  * Layers can have children, and you can traverse the graph both in
- * a depth first and in a breadth first, fashion.
+ * a depth first as well as in a breadth first fashion.
  *
  * By default, child layers are not constrained when drawing to the
  * bounds of their parent layer; it is possible, however, to specify
@@ -43,8 +43,9 @@ typedef struct _GskLayerClass           GskLayerClass;
  *
  * Each element has specific geometry, transformations, and content.
  *
- * The geometry is defined in terms of the position of a "pivot point"
- * and of a rectangle relative to that point.
+ * The geometry is defined in terms of the #GskLayer.position of a
+ * #GskLayer:pivot-point and of a rectangle relative to that point,
+ * called #GskLayer:bounds
  *
  * The rectangle has a width and a height, and its origin is always
  * positioned at the top left corner.
@@ -60,10 +61,10 @@ typedef struct _GskLayerClass           GskLayerClass;
  * layer will change its relative position with regards to its parent.
  *
  * It is also possible to change the overall geometry of a layer by
- * changing its frame; this is a shortcut that changes the position
- * and the layer's rectangle at the same time.
+ * changing its #GskLayer:frame; this is a shortcut that changes the
+ * position and the layer's rectangle at the same time.
  *
- * A layer possess a current transformation matrix; this matrix is
+ * A layer possesses a current transformation matrix; this matrix is
  * applied before the content of the layer is drawn. It is possible
  * to provide a full transformation matrix, relative to the layer's
  * pivot point, which specifies the transformations list in the order
@@ -77,7 +78,7 @@ typedef struct _GskLayerClass           GskLayerClass;
  * "scrolling" layout, without necessarily change the children frame
  * or their own transformation matrix.
  *
- * Finally, each layer has its own content.
+ * Finally, each layer has its own #GskLayer:content.
  *
  * It is possible to provide content for a layer in two different
  * ways:
@@ -294,6 +295,13 @@ void                    gsk_layer_set_content           (GskLayer               
                                                          GskLayerContent         *content);
 GDK_AVAILABLE_IN_3_14
 GskLayerContent *       gsk_layer_get_content           (GskLayer                *layer);
+
+GDK_AVAILABLE_IN_3_14
+void                    gsk_layer_set_background_color  (GskLayer                *layer,
+                                                         const GdkRGBA           *color);
+GDK_AVAILABLE_IN_3_14
+void                    gsk_layer_get_background_color  (GskLayer                *layer,
+                                                         GdkRGBA                 *color);
 
 /* Layout management */
 
