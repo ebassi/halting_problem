@@ -13,3 +13,6 @@ am now trying to keep them all on this site.
 
  * GUADEC 2014 — [The GTK+ Scene Graph Kit]({filename}../talks/gsk-guadec-2014.md)
 
+### 2013
+
+ * GUADEC 2013 — [Future in the Past]({filename}../talks/clutter-guadec-2013.md)
