@@ -2,6 +2,7 @@ Title: The GTK+ Scene Graph Kit
 Slug: guadec-2014-gsk
 Date: 2014-07-29
 Summary: my talk about the GTK+ scene graph API at GUADEC 2014
+Abstract: I gave this talk at GUADEC 2014; it's the second overall talk about the GTK+ scene graph I have ever gave (the first one was the announcement at GUADEC 2013 that I was going to work on GSK instead of Clutter 2.0), but it was actually the first one with code written down at the time of me speaking — albeit less code than I intended to have. GSK is clearly the spiritual successor of Clutter in many ways, but it's also a chance of applying the knowledge of 8 years of Clutter development in order to improve the GTK+ tool kit.
 Tags: talks, guadec, 2014, gsk, gtk, clutter, scene graph
 
 # The GTK+ Scene Graph Kit
