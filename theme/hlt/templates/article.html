@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ super() }} : {{ article.title }}{% endblock %}
+{% block title %}{{ super() }} : {{ article.title|striptags }}{% endblock %}
 
 {% block meta_other %}
 {% if article.status == 'draft' %}
