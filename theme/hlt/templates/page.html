@@ -7,6 +7,11 @@
 </header>
 
 <section>
+    {% if page.abstract is defined %}
+    <p id="article-abstract">
+    {{ page.abstract|e }}
+    </p>
+    {% endif %}
 
     {% if page.authoravatar %}
     <div class="avatar">
