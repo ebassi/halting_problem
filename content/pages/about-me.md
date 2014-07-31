@@ -39,3 +39,10 @@ Foundation](https://foundation.gnome.org) for three years.
  * [github](https://github.com/ebassi)
  * [ohloh](https://www.ohloh.net/accounts/ebassi)
  * [linkedin](http://uk.linkedin.com/in/ebassi/)
+
+#### Blog
+
+this website has been created using [Pelican](http://blog.getpelican.com/).
+you can check out its source and theme on [GitHub](https://github.com/ebassi/halting_problem).
+
+this website has a [comment policy]({filename}comments.md).

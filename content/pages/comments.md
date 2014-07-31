@@ -1,5 +1,6 @@
 Title: Comments policy
 Slug: comments
+Status: hidden
 
 as you may have noticed, I don't allow commenting on my blog.
 
