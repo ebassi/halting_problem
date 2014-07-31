@@ -4,6 +4,7 @@ Date: 2006-03-30 18:42
 Modified: 2014-07-30 18:00
 Tags: essays, gtk, glib, lazy loading, patterns
 Status: hidden
+Abstract: I wrote this page in 2006, back when I was starting out with complex GTK+ user interfaces, and I had to reply multiple times to questions on IRC and mailing lists that asked how to use threads to load content into a list store; this was my attempt at demonstrating that you don't really need threads at all, but you need to break down your work and parcellize it in discrete steps.
 
 Sometimes you have a long list of simple stuff you want to feed into a
 `GtkListStore` in order to view it with a `GtkTreeView`. Soon, you realize that
