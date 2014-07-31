@@ -98,7 +98,7 @@ article hr {
   height: 0;
 }
 
-article p#article-abstract {
+p#article-abstract {
   margin: 24px auto 48px auto;
   width: 650px;
   color: #aaa;
