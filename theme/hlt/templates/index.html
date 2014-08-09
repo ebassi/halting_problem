@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block title %}
+{% if articles_page.number != 1 %}
+{{ super() }} : page {{ articles_page.number }}
+{% else %}
+{{ super() }}
+{% endif %}
+{% endblock %}
+
 {% block content_title %}{% endblock %}
 
 {% block content %}        
