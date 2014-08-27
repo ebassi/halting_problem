@@ -5,6 +5,13 @@ Summary: using GDK with threads is never a good idea
 Abstract: I've seen a few bugs filed against GTK and GLib about potential regressions in the GDK threading API with GLib ≥ 2.41, and thought it would be best to write an article about it before people on the internet start screaming bloody murder and how everyone is switching to Qt because GTK+ kills puppies.
 Tags: gtk, development, threads
 
+this article is meant as a guideline and an explanation for application
+developers still using the deprecated `gdk_threads_*` family of functions
+*because of reasons*, as well as application developers still using GTK+
+2.x.
+
+newly written code should **not use this API at all**.
+
 > a programmer has a problem. "I know," he said, "I will use threads!"
 > now has he problems two.
 >		-- old Romulan proverb
@@ -99,25 +106,15 @@ since we could not enforce proper idiomatic code at the toolkit level, GDK
 
 - - -
 
-it's important to not that this does not absolve you from fixing your code:
-you **are** doing something wrong. it will allow, though, existing GTK+
-2.x/early GTK+ 3.x code calling `gdk_threads_init()` in the wrong way to
-continue working even in the face of undefined behaviour. take this as a
-chance to rework your code not to use the GDK API to mark critical sections,
-and instead use the proper approach of worker threads notifying the UI
-through idle and timeout callbacks executed from within the main thread — an
-approach that does not require calling `gdk_threads_init()` at all.
-
-- - -
-
-### Note ###
-
-this whole article is meant as a guideline and an explanation for
-application developers still using the deprecated `gdk_threads_*` family of
-functions *because of reasons*, as well as application developers still using
-GTK+ 2.x.
-
-newly written code should **not use this API at all**.
+it's important to not that the fix in GDK does not absolve you from fixing
+your code: you **are** doing something wrong. it will allow, though,
+existing GTK+ 2.x/early GTK+ 3.x code calling `gdk_threads_init()` in the
+wrong way to continue working even in the face of undefined behaviour. take
+this as a chance to rework your code not to use the GDK API to mark critical
+sections, and instead use the proper approach of worker threads notifying
+the UI through idle and timeout callbacks executed from within the main
+thread — an approach that does not require calling `gdk_threads_init()` at
+all.
 
 [gdk2-threads]: https://developer.gnome.org/gdk2/2.24/gdk2-Threads.html
 [glib-mutex]: https://developer.gnome.org/glib/stable/glib-Threads.html#g-mutex-unlock
