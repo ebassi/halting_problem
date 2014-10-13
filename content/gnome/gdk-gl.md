@@ -1,6 +1,6 @@
 Title: quiet strain
 Slug: quiet-strain
-Status: draft
+Date: 2014-10-13 16:08
 Tags: gtk, opengl, development, im in ur platform, fixing 10 yrs old bugs
 Summary: GTK is getting OpenGL support out of the box
 Abstract: the first step in getting to a modern tool kit with a decent handling of the graphic pipeline is to actually have a decent handling of the graphic pipeline; it turns out that Cairo does some of that for us, but since everyone has decided that the only API to be exposed by GPU drivers is OpenGL (and its variants) we probably need to do something about it.
