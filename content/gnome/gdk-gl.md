@@ -38,9 +38,43 @@ deprecations removal; the whole frame cycle is much better, and the paint
 sequence is reliable and completely different than before. yet, we still
 have to rely on poorly integrated external libraries to deal with OpenGL.
 
-given that I plan to use OpenGL to do compositing of layers in GSK, the
-first thing I had to do to get stuff on the screen properly was to sit down
-and solve the OpenGL integration.
+right after GUADEC, I started hacking on getting the minimal amount of API
+necessary to create a GL context, and being able to use it to draw on a GTK
+widget. it turns out that it wasn't that big of a job to get something on
+the screen in a semi-reliable way — after all, we already had libraries like
+[GtkGLExt][gtk-glext] and [GtkGLArea][gtk-glarea] living outside of the GTK
+git repository that did that, even if they had to use deprecated or broken
+API. the complex part of this work involved being able to draw GL inside the
+same infrastructure that we currently use for Cairo. we need to be able to
+synchronise the frame drawing, and we need to be able to blend the contents
+of the GL area with both content that was drawn before and after, likely
+with Cairo — otherwise we would not be able to do things like drawing an
+overlay notification on top of the usual spinning gears, while keeping the
+background color of the window:
+
+{% figure {filename}/images/gdk-gl-gears.png welcome to the world of tomorrow (for values of tomorrow close to 2005) %}
+
+luckily, thanks to [Alex][alexl-blog], the amount of changes in the internals
+of GDK was kept to a minimum, and we can enjoy GL rendering running natively
+on X11 *and* Wayland, using GLX or EGL respectively.
+
+on top of the low level API, we have a `GtkGLArea` widget that renders all
+the GL commands you submit to it, and it behaves like any other GTK+ widgets.
+
+today, [Matthias][mclasen-blog] merged the topic branch into `master`, which
+means that, barring disastrous regressions, GTK+ 3.16 will finally have
+native OpenGL support — and we'll be one step closer to GSK as well.
+
+right now, there's still some work to do — namely: examples, performance,
+documentation, porting to MacOS and Windows — but the API is already fairly
+solid, so we'd all like to get feedback from the users of libraries like
+GtkGLExt and GtkGLArea, to see what they need or what we missed. feedback
+is, as usual, best directed at the `gtk-devel` mailing list, or on the
+`#gtk+` IRC channel.
 
 [wiki-ridley]: https://wiki.gnome.org/Attic/ProjectRidley
 [bug-opengl]: https://bugzilla.gnome.org/show_bug.cgi?id=119189
+[gtk-glext]: https://projects.gnome.org/gtkglext/
+[gtk-glarea]: http://www.mono-project.com/archived/gtkglarea/
+[alexl-blog]: http://blogs.gnome.org/alexl/
+[mclasen-blog]: http://blogs.gnome.org/mclasen/
