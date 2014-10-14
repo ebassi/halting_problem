@@ -12,7 +12,7 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=www.emmanuelebassi.name
+SSH_HOST=www.bassi.io
 SSH_PORT=22
 SSH_USER=ebassi
 SSH_TARGET_DIR=/home/ebassi/public_html/blog
