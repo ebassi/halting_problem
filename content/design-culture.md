@@ -1,5 +1,4 @@
 Title: design culture
-Status: draft
 Tags: design, free software
 Summary: software development, free software, and design should not be at odds with each other
 
@@ -37,7 +36,7 @@ the cognitive dissonance runs even deeper than just not realizing that "form
 follows function" is a conscious design choice. go to a conference, and look
 at the laptops, and you'll see MacBooks or ThinkPads, which are two or the
 most heavily designed pieces of machinery in existence[^2]. even on the
-software side, the whole idea of "Unix Philosophy" is a the expression of a
+software side, the whole idea of "Unix Philosophy" is the expression of a
 certain design culture.
 
 in short: you **cannot** "not care" about design. everything deals with
