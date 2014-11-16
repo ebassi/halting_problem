@@ -30,9 +30,13 @@ in the meantime, I'm doing some much needed spring cleaning in the
 for implementing `GdkGLContext` on MacOS X. now it's up to the Windows
 developers to step up their game. :-)
 
+**Update**: Fan Chun-wei is [looking into Windows support][ml-gtk-gl], so we
+should have a patchset for it soon!
+
 [opengl-web]: https://www.opengl.org/
 [gdk-gl]: http://www.bassi.io/articles/2014/10/13/quiet-strain/
 [gdkgl-api]: https://developer.gnome.org/gdk3/unstable/GdkGLContext.html
 [bz-gtkglext]: https://bugzilla.gnome.org/browse.cgi?product=gtkglext
 [bz-gtkglarea]: https://bugzilla.gnome.org/browse.cgi?product=gtkglarea
 [bz-gl-quartz]: https://bugzilla.gnome.org/show_bug.cgi?id=740199
+[ml-gtk-gl]: https://mail.gnome.org/archives/gtk-devel-list/2014-November/msg00009.html
