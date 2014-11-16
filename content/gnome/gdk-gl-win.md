@@ -1,6 +1,7 @@
 Title: with a little help
 Slug: with-a-little-help
 Date: 2014-11-15 16:30
+Modified: 2014-11-16 14:21
 Tags: gtk, opengl, development, windows, quartz
 Summary: if you use GTK+ on Windows or MacOS X, and you want to use GL, please help the GTK+ team out
 
@@ -23,8 +24,15 @@ testing and feedback is also very much appreciated.
 in the meantime, I'm doing some much needed spring cleaning in the
 [GtkGLExt][bz-gtkglext] and [GtkGLArea][bz-gtkglarea] products on Bugzilla.
 
+- - -
+
+**Update**: thanks to Brion Vibber, there's already a [preliminary patch][bz-gl-quartz]
+for implementing `GdkGLContext` on MacOS X. now it's up to the Windows
+developers to step up their game. :-)
+
 [opengl-web]: https://www.opengl.org/
 [gdk-gl]: http://www.bassi.io/articles/2014/10/13/quiet-strain/
 [gdkgl-api]: https://developer.gnome.org/gdk3/unstable/GdkGLContext.html
 [bz-gtkglext]: https://bugzilla.gnome.org/browse.cgi?product=gtkglext
 [bz-gtkglarea]: https://bugzilla.gnome.org/browse.cgi?product=gtkglarea
+[bz-gl-quartz]: https://bugzilla.gnome.org/show_bug.cgi?id=740199
