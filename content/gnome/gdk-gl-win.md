@@ -1,7 +1,7 @@
 Title: with a little help
 Slug: with-a-little-help
 Date: 2014-11-15 16:30
-Modified: 2014-11-16 14:21
+Modified: 2014-11-16 18:28
 Tags: gtk, opengl, development, windows, quartz
 Summary: if you use GTK+ on Windows or MacOS X, and you want to use GL, please help the GTK+ team out
 
