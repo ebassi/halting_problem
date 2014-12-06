@@ -1,5 +1,6 @@
 Title: layer by layer
-Status: draft
+Tags: development, graphene
+Date: 2014-12-06 13:30
 Summary: my little library of math types for 3D canvas libraries is not so little any more
 Abstract: in writing libraries, like in a game of chicken, the hard part is knowing when to flinch. in this specific case, when to stop adding symbols to a library that is barely six months old, while writing at least another two that directly depend on it. I think that Graphene reached that point.
 
