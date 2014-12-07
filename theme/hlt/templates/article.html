@@ -43,9 +43,10 @@
         {% endif %}
     </section>
 
-    <p class="twitter widget">
-    {% include 'twitter.html' %}
-    </p>
+    <div class="widget-list">
+      {% include 'twitter.html' %}
+      {% include 'gplus.html' %}
+    </div>
 </article>
 {% endblock %}
 
