@@ -4,9 +4,9 @@ Date: 2014-12-06 13:30
 Summary: my little library of math types for 3D canvas libraries is not so little any more
 Abstract: in writing libraries, like in a game of chicken, the hard part is knowing when to flinch. in this specific case, when to stop adding symbols to a library that is barely six months old, while writing at least another two that directly depend on it. I think that Graphene reached that point.
 
-I've been having some more fun working on Graphene, lately, thanks to
-[Alex][alexl-blog] and his port of [three.js][three-js] to GObject,
-[Gthree][gthree-github].
+I've been having some more fun working on [Graphene][graphene], lately,
+thanks to [Alex][alexl-blog] and his port of [three.js][three-js] to
+GObject, [Gthree][gthree-github].
 
 the little library that started in May with a bunch of basic types for
 vectors and matrices, as well as some 2D types that were required for
@@ -43,6 +43,7 @@ particular needs. right now, Graphene has become a fairly sizeable library,
 but one that is easy to keep in your head in its entirety — and I'd hate to
 lose that characteristic.
 
+[graphene]: https://github.com/ebassi/graphene
 [alexl-blog]: https://blogs.gnome.org/alexl
 [three-js]: http://threejs.org/
 [gthree-github]: https://github.com/alexlarsson/gthree
