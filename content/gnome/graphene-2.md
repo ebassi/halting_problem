@@ -8,8 +8,8 @@ I've been having some more fun working on [Graphene][graphene], lately,
 thanks to [Alex][alexl-blog] and his port of [three.js][three-js] to
 GObject, [Gthree][gthree-github].
 
-the little library that started in May with a bunch of basic types for
-vectors and matrices, as well as some 2D types that were required for
+the little library that [started in May][graphene-blog] with a bunch of basic
+types for vectors and matrices, as well as some 2D types that were required for
 convenience, has now grown to include some more 3D types, for the
 convenience of people developing 3D canvases:
 
@@ -43,7 +43,8 @@ particular needs. right now, Graphene has become a fairly sizeable library,
 but one that is easy to keep in your head in its entirety — and I'd hate to
 lose that characteristic.
 
-[graphene]: https://github.com/ebassi/graphene
+[graphene-blog]: https://www.bassi.io/articles/2014/05/03/graphene/
+[graphene]: http://ebassi.github.io/graphene
 [alexl-blog]: https://blogs.gnome.org/alexl
 [three-js]: http://threejs.org/
 [gthree-github]: https://github.com/alexlarsson/gthree

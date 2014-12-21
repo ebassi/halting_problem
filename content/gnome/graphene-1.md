@@ -31,15 +31,17 @@ translating naive matrix determinant code to SIMD four vector data structures,
 and do a union of all possible API, before you have something you can actually
 use.
 
-the end result of these seven days is an almost decent, almost complete little
-utility library that tries to be fairly thin in both what it requires and what
-it provides. I called it graphene and it’s available in Git. at some point, when
-I’m actually satisfied with it, I’ll even document it like the grown-up I’m
-supposed to be. right now, I’ll have to write a ton of tests to check on the
-math, because I’m pretty sure there must be at ton of bugs in there.
+the end result of these seven days is an almost decent, almost complete
+little utility library that tries to be fairly thin in both what it requires
+and what it provides. I called it graphene and it’s available [in Git][graphene-gh].
+at some point, when I’m actually satisfied with it, I’ll even document it like
+the grown-up I’m supposed to be. right now, I’ll have to write a ton of tests to
+check on the math, because I’m pretty sure there must be at ton of bugs in there.
 
-the main question is: what do I intend to use graphene for. the more attentive
+the main question is: what do I intend to use Graphene for. the more attentive
 amongst you, kind readers, will already guess that it’s for the forthcoming GTK+
 scene graph API — which is indeed the correct answer, but you’ll have to wait
 for the next blog post in the series for a proper introduction and description,
 as well as a road map for the unicorn and ponies fuelled future.
+
+[graphene-gh]: https://github.com/ebassi/graphene/
