@@ -2,6 +2,7 @@ Title: Graphene
 Slug: graphene
 Tags: development, graphics, libraries
 Date: 2014-05-03
+Modified: 2014-12-21 10:48
 Summary: a new library I wrote to handle common geometry types for graphic libraries, possibly optimizing them
 
 one of the challenges of writing a graphics library that is capable of doing
