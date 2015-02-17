@@ -1,6 +1,7 @@
 Title: Using OpenGL with GTK+
 Slug: using-opengl-with-gtk
 Date: 2015-02-17 00:09
+Modified: 2015-02-17 23:39
 Tags: gtk, opengl, development
 Summary: how to use OpenGL with GTK+ 3.16
 Abstract: now that GTK+ supports OpenGL natively (at least on Linux and Windows) it's probably a good time to show how to properly use OpenGL with GTK+.
