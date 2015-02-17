@@ -87,7 +87,7 @@ API, we could have simply connected to the `GtkGLArea::render` signal,
 called some OpenGL API, and have something appear on the screen. those days
 are long gone. OpenGL requires more code to get going with the programmable
 pipeline. while this means that you have access to a much leaner (and
-powerful), convenience went out of the window.
+powerful) API, some of the convenience went out of the window.
 
 in order to get things going, we need to start by setting up the OpenGL
 state; we use the `GtkWidget::realize` signal, as that allows our code to be
