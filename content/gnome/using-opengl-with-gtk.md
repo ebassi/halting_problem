@@ -71,7 +71,7 @@ signals.
 
 once we connect all elements of the template to the `GlareaAppWindow` class:
 
-{% include_code glarea/glarea-app-window.c lang:cpp lines:338-355 %}
+{% include_code glarea/glarea-app-window.c lang:cpp lines:354-370 %}
 
 and we compile and run the whole thing, we should get something like this:
 
@@ -94,16 +94,16 @@ state; we use the `GtkWidget::realize` signal, as that allows our code to be
 called after the `GtkGLArea` widget has created a `GdkGLContext`, so that we
 can use it:
 
-{% include_code glarea/glarea-app-window.c lang:cpp lines:188-202 %}
+{% include_code glarea/glarea-app-window.c lang:cpp lines:206-227 %}
 
 in the same way, we use `GtkWidget::unrealize` to free the resources we
 created inside the `gl_init` callback:
 
-{% include_code glarea/glarea-app-window.c lang:cpp lines:204-213 %}
+{% include_code glarea/glarea-app-window.c lang:cpp lines:229-238 %}
 
 at this point, the code to draw the context of the `GtkGLArea` is:
 
-{% include_code glarea/glarea-app-window.c lang:cpp lines:247-263 %}
+{% include_code glarea/glarea-app-window.c lang:cpp lines:263-279 %}
 
 and *voilà*:
 
@@ -117,14 +117,14 @@ vertex buffers on the graphics pipeline, and populates it with the
 per-vertex data that we want to use later on, namely: the position of each
 vertex, and its color:
 
-{% include_code glarea/glarea-app-window.c lang:cpp lines:36-48 %}
+{% include_code glarea/glarea-app-window.c lang:cpp lines:34-44 %}
 
 it does that by creating two buffers:
 
  * a Vertex Array Object, which holds all the subsequent vertex buffers
  * a Vertex Buffer Object, which holds the vertex data
 
-{% include_code glarea/glarea-app-window.c lang:cpp lines:55-63 %}
+{% include_code glarea/glarea-app-window.c lang:cpp lines:53-72 %}
 
 the `init_shaders()` function is a bit more complex, as it needs to
 
@@ -151,7 +151,7 @@ pipeline, the GPU will render the result of the program operating over the
 vertex and fragment data — in our case, a triangle with colors interpolating
 between each vertex:
 
-{% include_code glarea/glarea-app-window.c lang:cpp lines:215-245 %}
+{% include_code glarea/glarea-app-window.c lang:cpp lines:240-261 %}
 
 now that we have a static triangle, we should connect the UI controls and
 transform it around each axis. in order to do that, we compute the
@@ -160,7 +160,7 @@ the rotation angle around each axis. first of all, we connect to the
 `GtkAdjustment::value-changed` signal, update the rotation angles, and use
 them to generate the rotation matrix:
 
-{% include_code glarea/glarea-app-window.c lang:cpp lines:312-336 %}
+{% include_code glarea/glarea-app-window.c lang:cpp lines:328-352 %}
 
 then we queue a redraw on the `GtkGLArea` widget, and that's it; the
 `draw_triangle()` code will take the matrix, place it inside the vertex
