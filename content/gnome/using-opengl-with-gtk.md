@@ -78,7 +78,7 @@ and we compile and run the whole thing, we should get something like this:
 {% figure {filename}/images/glarea-empty.png the empty GL drawing area %}
 
 if there were any errors while initializing the GL context, you would see
-them inside the `GtkGLArea` window itself; you can control this behaviour,
+them inside the `GtkGLArea` widget itself; you can control this behaviour,
 just like you can control the creation of the `GdkGLContext` yourself.
 
 as you saw in the code above, we use the `GtkWidget` signals to set up,
@@ -91,8 +91,8 @@ powerful) API, some of the convenience went out of the window.
 
 in order to get things going, we need to start by setting up the OpenGL
 state; we use the `GtkWidget::realize` signal, as that allows our code to be
-called after the `GtkGLArea` widget has created a `GdkGLContext`, and we can
-use it:
+called after the `GtkGLArea` widget has created a `GdkGLContext`, so that we
+can use it:
 
 {% include_code glarea/glarea-app-window.c lang:cpp lines:188-202 %}
 
