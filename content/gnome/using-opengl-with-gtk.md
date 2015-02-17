@@ -226,7 +226,7 @@ that changes inside GTK+ may break your existing code.
  * [Learning Modern 3D Graphics Programming][mckesson-tut], by Jason L. McKesson
  * [GtkGLArea API reference][gtk-glarea-api]
 
-[mckesson-tut]: http://www.arcsynthesis.org/gltut/index.html]
+[mckesson-tut]: http://www.arcsynthesis.org/gltut/index.html
 [anton-gl4-tut]: http://antongerdelan.net/opengl/index.html
 [gtkglext-web]: https://projects.gnome.org/gtkglext/
 [gtkglarea-web]: http://www.mono-project.com/archived/gtkglarea/
