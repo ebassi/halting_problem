@@ -122,7 +122,7 @@ vertex, and its color:
 it does that by creating two buffers:
 
  * a Vertex Array Object, which holds all the subsequent vertex buffers
- * a Vertex Buffer Object, which holds the vertext data
+ * a Vertex Buffer Object, which holds the vertex data
 
 {% include_code glarea/glarea-app-window.c lang:cpp lines:55-63 %}
 
