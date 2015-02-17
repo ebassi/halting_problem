@@ -229,7 +229,7 @@ that changes inside GTK+ may break your existing code.
 [mckesson-tut]: http://www.arcsynthesis.org/gltut/index.html]
 [anton-gl4-tut]: http://antongerdelan.net/opengl/index.html
 [gtkglext-web]: https://projects.gnome.org/gtkglext/
-[gtlglarea-web]: http://www.mono-project.com/archived/gtkglarea/
+[gtkglarea-web]: http://www.mono-project.com/archived/gtkglarea/
 [gtk-api-example]: https://developer.gnome.org/gtk3/stable/ch01s05.html#id-1.2.3.7.5
 [glarea-example-git]: https://github.com/ebassi/glarea-example 
 [gtk-glarea-api]: https://developer.gnome.org/gtk3/unstable/GtkGLArea.html
