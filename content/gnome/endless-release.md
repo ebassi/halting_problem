@@ -7,7 +7,7 @@ Summary: An anniversary and an announcement
 I've been working at [Endless](https://endlessm.com) for two years, now.
 
 I'm incredibly lucky to be working at a great company, with great
-colleagues, on cool projects, using technologies I love, towards a goal a
+colleagues, on cool projects, using technologies I love, towards a goal I
 care deeply about.
 
 We've been operating a bit under the radar for a while, but now it's time to
