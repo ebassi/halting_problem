@@ -39,4 +39,10 @@ Clutter in a Python context.
 I'll probably do a release, but I'd be happy if somebody wanted to pick up
 the bindings and run with them — I'm not much of a Python programmer myself.
 
+### Resources
+
+ * [PyClutter][pyclutter] Git repository on git.gnome.org
+ * [PyClutter examples][pyclutter-examples]
+
 [pyclutter]: https://git.gnome.org/browse/pyclutter
+[pyclutter-examples]: https://git.gnome.org/browse/pyclutter/tree/examples
