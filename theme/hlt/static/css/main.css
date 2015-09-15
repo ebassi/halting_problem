@@ -467,3 +467,36 @@ ul.social li::before {
 ul.social li::after {
   content: " ::";
 }
+
+table {
+  margin: 4em 0 4em -30px;
+  left: -60px;
+  width: 710px;
+}
+
+thead th {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 0.75em;
+}
+
+tbody tr td {
+  font-size: 0.75em;
+}
+
+th:nth-child(2) {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  padding-right: 1em;
+}
+
+th:nth-child(3) {
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  padding-left: 1em;
+}
+
+tbody tr td:nth-child(2) {
+  padding-right: 1em;
+}
+
+tbody tr td:nth-child(3) {
+  padding-left: 1em;
+}
