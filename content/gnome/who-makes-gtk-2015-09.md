@@ -64,49 +64,28 @@ number of developers.
 Of the 50 developers that contributed the 355 changesets of GLib during the
 3.18 cycle, the most active are:
 
-                             Per changeset
-    Matthias Clasen             89 (25.9%)
-    Philip Withnall             50 (14.5%)
-    Ryan Lortie                 31  (9.0%)
-    Dan Winship                 29  (8.4%)
-    Simon McVittie              19  (5.5%)
-    Chun-wei Fan                14  (4.1%)
-    Руслан Ижбулатов            11  (3.2%)
-    Mikhail Zabaluev             8  (2.3%)
-    Ting-Wei Lan                 8  (2.3%)
-    Garrett Regier               6  (1.7%)
-    Alexander Larsson            5  (1.5%)
-    Michael Catanzaro            5  (1.5%)
-    Emmanuele Bassi              5  (1.5%)
-    Christophe Fergeau           5  (1.5%)
-    Paolo Borelli                5  (1.5%)
-    Piotr Drąg                   4  (1.2%)
-    Kalev Lember                 4  (1.2%)
-    Iain Lane                    4  (1.2%)
-    TingPing                     4  (1.2%)
-    Rico Tzschichholz            3  (0.9%)
-
-                         Per changed lines
-    Руслан Ижбулатов          7337 (27.6%)
-    Ryan Lortie               5709 (21.5%)
-    Chun-wei Fan              3426 (12.9%)
-    Matthias Clasen           2881 (10.8%)
-    Philip Withnall           1729  (6.5%)
-    Dan Winship               1590  (6.0%)
-    Simon McVittie             867  (3.3%)
-    Alexander Larsson          648  (2.4%)
-    Paolo Borelli              588  (2.2%)
-    TingPing                   358  (1.3%)
-    Janusz Lewandowski         313  (1.2%)
-    Mikhail Zabaluev           256  (1.0%)
-    Iain Lane                  130  (0.5%)
-    Garrett Regier             128  (0.5%)
-    Michael Catanzaro          106  (0.4%)
-    Richard Hughes              97  (0.4%)
-    Emmanuele Bassi             70  (0.3%)
-    Xavier Claessens            48  (0.2%)
-    Ross Lagerwall              35  (0.1%)
-    Ting-Wei Lan                32  (0.1%)
+| Name               | Per changeset | Name               | Per changed lines |
+|:-------------------|--------------:|:-------------------|------------------:|
+| Matthias Clasen    |    89 (25.9%) | Руслан Ижбулатов   |      7337 (27.6%) |
+| Philip Withnall    |    50 (14.5%) | Ryan Lortie        |      5709 (21.5%) |
+| Ryan Lortie        |    31  (9.0%) | Chun-wei Fan       |      3426 (12.9%) |
+| Dan Winship        |    29  (8.4%) | Matthias Clasen    |      2881 (10.8%) |
+| Simon McVittie     |    19  (5.5%) | Philip Withnall    |      1729  (6.5%) |
+| Chun-wei Fan       |    14  (4.1%) | Dan Winship        |      1590  (6.0%) |
+| Руслан Ижбулатов   |    11  (3.2%) | Simon McVittie     |       867  (3.3%) |
+| Mikhail Zabaluev   |     8  (2.3%) | Alexander Larsson  |       648  (2.4%) |
+| Ting-Wei Lan       |     8  (2.3%) | Paolo Borelli      |       588  (2.2%) |
+| Garrett Regier     |     6  (1.7%) | TingPing           |       358  (1.3%) |
+| Alexander Larsson  |     5  (1.5%) | Janusz Lewandowski |       313  (1.2%) |
+| Michael Catanzaro  |     5  (1.5%) | Mikhail Zabaluev   |       256  (1.0%) |
+| Emmanuele Bassi    |     5  (1.5%) | Iain Lane          |       130  (0.5%) |
+| Christophe Fergeau |     5  (1.5%) | Garrett Regier     |       128  (0.5%) |
+| Paolo Borelli      |     5  (1.5%) | Michael Catanzaro  |       106  (0.4%) |
+| Piotr Drąg         |     4  (1.2%) | Richard Hughes     |        97  (0.4%) |
+| Kalev Lember       |     4  (1.2%) | Emmanuele Bassi    |        70  (0.3%) |
+| Iain Lane          |     4  (1.2%) | Xavier Claessens   |        48  (0.2%) |
+| TingPing           |     4  (1.2%) | Ross Lagerwall     |        35  (0.1%) |
+| Rico Tzschichholz  |     3  (0.9%) | Ting-Wei Lan       |        32  (0.1%) |
 
 Руслан Ижбулатов has been working on the Windows support, ensuring that the
 library and test suites work correctly there. Chun-wei Fan has been fixing
@@ -122,49 +101,28 @@ project.
 
 For GTK+, on the other hand, the most active of the 83 contributors are:
 
-                                   Per changeset
-    Matthias Clasen                  811 (49.8%)
-    Benjamin Otte                    184 (11.3%)
-    Carlos Garnacho                  107  (6.6%)
-    Cosimo Cecchi                     40  (2.5%)
-    Jakub Steiner                     37  (2.3%)
-    Lapo Calamandrei                  35  (2.1%)
-    Emmanuele Bassi                   33  (2.0%)
-    Carlos Soriano                    30  (1.8%)
-    Timm Bäder                        29  (1.8%)
-    Chun-wei Fan                      24  (1.5%)
-    William Hua                       24  (1.5%)
-    Alexander Larsson                 23  (1.4%)
-    Georges Basile Stavracas Neto     23  (1.4%)
-    Jonas Ådahl                       19  (1.2%)
-    Christian Hergert                 17  (1.0%)
-    Piotr Drąg                        17  (1.0%)
-    Paolo Borelli                     17  (1.0%)
-    Christoph Reiter                  14  (0.9%)
-    Руслан Ижбулатов                  13  (0.8%)
-    Jasper St. Pierre                 11  (0.7%)
-
-                               Per changed lines
-    Matthias Clasen                37393 (37.3%)
-    Chun-wei Fan                   22644 (22.6%)
-    Benjamin Otte                  10991 (11.0%)
-    Jakub Steiner                   4762  (4.7%)
-    Georges Basile Stavracas Neto   3879  (3.9%)
-    Carlos Soriano                  3827  (3.8%)
-    Lapo Calamandrei                3208  (3.2%)
-    Carlos Garnacho                 2690  (2.7%)
-    Руслан Ижбулатов                1480  (1.5%)
-    Alexander Larsson               1001  (1.0%)
-    William Hua                      947  (0.9%)
-    Cosimo Cecchi                    704  (0.7%)
-    Paolo Borelli                    671  (0.7%)
-    Jasper St. Pierre                627  (0.6%)
-    Christian Hergert                592  (0.6%)
-    Sebastien Lafargue               570  (0.6%)
-    Emmanuele Bassi                  556  (0.6%)
-    Jonas Ådahl                      543  (0.5%)
-    Christoph Reiter                 488  (0.5%)
-    Ryan Lortie                      424  (0.4%)
+| Name                          | Per changeset | Name                          | Per changed lines |
+|:------------------------------|--------------:|:------------------------------|------------------:|
+| Matthias Clasen               |   811 (49.8%) | Matthias Clasen               |     37393 (37.3%) |
+| Benjamin Otte                 |   184 (11.3%) | Chun-wei Fan                  |     22644 (22.6%) |
+| Carlos Garnacho               |   107  (6.6%) | Benjamin Otte                 |     10991 (11.0%) |
+| Cosimo Cecchi                 |    40  (2.5%) | Jakub Steiner                 |      4762  (4.7%) |
+| Jakub Steiner                 |    37  (2.3%) | Georges Basile Stavracas Neto |      3879  (3.9%) |
+| Lapo Calamandrei              |    35  (2.1%) | Carlos Soriano                |      3827  (3.8%) |
+| Emmanuele Bassi               |    33  (2.0%) | Lapo Calamandrei              |      3208  (3.2%) |
+| Carlos Soriano                |    30  (1.8%) | Carlos Garnacho               |      2690  (2.7%) |
+| Timm Bäder                    |    29  (1.8%) | Руслан Ижбулатов              |      1480  (1.5%) |
+| Chun-wei Fan                  |    24  (1.5%) | Alexander Larsson             |      1001  (1.0%) |
+| William Hua                   |    24  (1.5%) | William Hua                   |       947  (0.9%) |
+| Alexander Larsson             |    23  (1.4%) | Cosimo Cecchi                 |       704  (0.7%) |
+| Georges Basile Stavracas Neto |    23  (1.4%) | Paolo Borelli                 |       671  (0.7%) |
+| Jonas Ådahl                   |    19  (1.2%) | Jasper St. Pierre             |       627  (0.6%) |
+| Christian Hergert             |    17  (1.0%) | Christian Hergert             |       592  (0.6%) |
+| Piotr Drąg                    |    17  (1.0%) | Sebastien Lafargue            |       570  (0.6%) |
+| Paolo Borelli                 |    17  (1.0%) | Emmanuele Bassi               |       556  (0.6%) |
+| Christoph Reiter              |    14  (0.9%) | Jonas Ådahl                   |       543  (0.5%) |
+| Руслан Ижбулатов              |    13  (0.8%) | Christoph Reiter              |       488  (0.5%) |
+| Jasper St. Pierre             |    11  (0.7%) | Ryan Lortie                   |       424  (0.4%) |
 
 While Benjamin is hard at work at improving the correctness and performance of
 the style machinery inside GTK+, Jakub and Lapo are constantly trying to find
