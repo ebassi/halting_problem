@@ -141,6 +141,25 @@ more prolific contributors; nevertheless, it's important to note that a larger
 number of developers are unaffiliated, or contribute to GLib and GTK+ in their
 own time:
 
+#### GLib
+                     Per changeset                          Per lines
+    Red Hat            138 (40.1%)	(Unknown)       12892 (48.5%)
+    (Unknown)           95 (27.6%)	Canonical        5794 (21.8%)
+    Collabora           65 (18.9%)	Red Hat          5222 (19.6%)
+    Canonical           37 (10.8%)	Collabora        2574  (9.7%)
+    Endless              6  (1.7%)	Endless            72  (0.3%)
+    Centricular          2  (0.6%)	Centricular        28  (0.1%)
+
+        Per contributor (total 52)
+    (Unknown)           32 (61.5%)
+    Red Hat             10 (19.2%)
+    Canonical            3  (5.8%)
+    Collabora            2  (3.8%)
+    Endless              2  (3.8%)
+    Centricular          2  (3.8%)
+
+#### GTK+
+
                      Per changeset                          Per lines
     Red Hat           1230 (75.5%)      Red Hat         61725 (61.6%)
     (Unknown)          340 (20.9%)      (Unknown)       36845 (36.7%)
