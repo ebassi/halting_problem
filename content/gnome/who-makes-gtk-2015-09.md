@@ -75,7 +75,7 @@ Of the 50 developers that contributed the 355 changesets of GLib during the
 | Руслан Ижбулатов   |    11  (3.2%) | Simon McVittie     |       867  (3.3%) |
 | Mikhail Zabaluev   |     8  (2.3%) | Alexander Larsson  |       648  (2.4%) |
 | Ting-Wei Lan       |     8  (2.3%) | Paolo Borelli      |       588  (2.2%) |
-| Garrett Regier     |     6  (1.7%) | TingPing           |       358  (1.3%) |
+| Garrett Regier     |     6  (1.7%) | Patrick Griffis    |       358  (1.3%) |
 | Alexander Larsson  |     5  (1.5%) | Janusz Lewandowski |       313  (1.2%) |
 | Michael Catanzaro  |     5  (1.5%) | Mikhail Zabaluev   |       256  (1.0%) |
 | Emmanuele Bassi    |     5  (1.5%) | Iain Lane          |       130  (0.5%) |
@@ -84,7 +84,7 @@ Of the 50 developers that contributed the 355 changesets of GLib during the
 | Piotr Drąg         |     4  (1.2%) | Richard Hughes     |        97  (0.4%) |
 | Kalev Lember       |     4  (1.2%) | Emmanuele Bassi    |        70  (0.3%) |
 | Iain Lane          |     4  (1.2%) | Xavier Claessens   |        48  (0.2%) |
-| TingPing           |     4  (1.2%) | Ross Lagerwall     |        35  (0.1%) |
+| Patrick Griffis    |     4  (1.2%) | Ross Lagerwall     |        35  (0.1%) |
 | Rico Tzschichholz  |     3  (0.9%) | Ting-Wei Lan       |        32  (0.1%) |
 
 Руслан Ижбулатов has been working on the Windows support, ensuring that the
