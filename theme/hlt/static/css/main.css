@@ -483,12 +483,12 @@ tbody tr td {
   font-size: 0.75em;
 }
 
-th:nth-child(2) {
+th:nth-child(even) {
   border-right: 1px solid rgba(0, 0, 0, 0.15);
   padding-right: 1em;
 }
 
-th:nth-child(3) {
+th:nth-child(odd) {
   border-left: 1px solid rgba(0, 0, 0, 0.15);
   padding-left: 1em;
 }
