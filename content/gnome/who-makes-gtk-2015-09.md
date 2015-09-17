@@ -37,11 +37,12 @@ Corbet wrote for the "Who wrote the Linux kernel" columns for LWN.
 To provide a baseline, this is how the development activity looked like during
 the GNOME 3.14 and 3.16 cycles, i.e. during the past year:
 
-          Version       Lines added   Lines removed   Delta   Developers
-    GLib  2.42          17195         9934            7261    61
-    GLib  2.44          12504         2240            10264   49
-    GTK+  3.14          130387        144945         -14558   84
-    GTK+  3.16          80321         37043           43278   94
+|      | Version | Lines added | Lines removed | Delta  | Contributors |
+|------|---------|------------:|--------------:|-------:|-------------:|
+| GLib | 2.42    |       17195 |          9934 |   7261 |           61 |
+| GLib | 2.44    |       12504 |          2240 |  10264 |           49 |
+| GTK+ | 3.14    |      130387 |        144945 | -14558 |           84 |
+| GTK+ | 3.16    |       80321 |         37043 |  43278 |           94 |
 
 *Note*: the numbers do not include the translation work; as much as
 translations are an important part of our stack, they tend to skew any
@@ -52,9 +53,10 @@ as well as the GTK+ Inspector.
 
 For the 3.18 cycle, the numbers up to September 15th are:
 
-          Version       Lines added   Lines removed   Delta   Developers
-    GLib  2.46          19763         12437           7326    50
-    GTK+  3.18          78676         54508           24168   83
+|      | Version | Lines added | Lines removed | Delta | Contributors |
+|------|---------|------------:|--------------:|------:|-------------:|
+| GLib | 2.46    |       19763 |         12437 |  7326 |           50 |
+| GTK+ | 3.18    |       78676 |         54508 | 24168 |           83 |
 
 As you can see, the numbers are mostly stable, in terms for code changes and
 number of developers.
@@ -142,39 +144,26 @@ number of developers are unaffiliated, or contribute to GLib and GTK+ in their
 own time:
 
 #### GLib
-                     Per changeset                          Per lines
-    Red Hat            138 (40.1%)      (Unknown)       12892 (48.5%)
-    (Unknown)           95 (27.6%)      Canonical        5794 (21.8%)
-    Collabora           65 (18.9%)      Red Hat          5222 (19.6%)
-    Canonical           37 (10.8%)      Collabora        2574  (9.7%)
-    Endless              6  (1.7%)      Endless            72  (0.3%)
-    Centricular          2  (0.6%)      Centricular        28  (0.1%)
 
-        Per contributor (total 52)
-    (Unknown)           32 (61.5%)
-    Red Hat             10 (19.2%)
-    Canonical            3  (5.8%)
-    Collabora            2  (3.8%)
-    Endless              2  (3.8%)
-    Centricular          2  (3.8%)
+| Affiliation | Per changeset | Affiliation | Per lines     | Affiliation | Per contributor (total 52)|
+|-------------|--------------:|-------------|--------------:|-------------|--------------------------:|
+| Red Hat     |   138 (40.1%) | (Unknown)   | 12892 (48.5%) | (Unknown)   |                32 (61.5%) |
+| (Unknown)   |    95 (27.6%) | Canonical   |  5794 (21.8%) | Red Hat     |                10 (19.2%) |
+| Collabora   |    65 (18.9%) | Red Hat     |  5222 (19.6%) | Canonical   |                 3  (5.8%) |
+| Canonical   |    37 (10.8%) | Collabora   |  2574  (9.7%) | Collabora   |                 2  (3.8%) |
+| Endless     |     6  (1.7%) | Endless     |    72  (0.3%) | Endless     |                 2  (3.8%) |
+| Centricular |     2  (0.6%) | Centricular |    28  (0.1%) | Centricular |                 2  (3.8%) |
 
 #### GTK+
 
-                     Per changeset                          Per lines
-    Red Hat           1230 (75.5%)      Red Hat         61725 (61.6%)
-    (Unknown)          340 (20.9%)      (Unknown)       36845 (36.7%)
-    Endless             43  (2.6%)      Endless          1181  (1.2%)
-    Canonical           13  (0.8%)      Canonical         491  (0.5%)
-    Collabora            2  (0.1%)      Collabora          19  (0.0%)
-    Intel                1  (0.1%)      Intel               2  (0.0%)
-
-        Per contributor (total 85)
-    (Unknown)           58 (68.2%)
-    Red Hat             19 (22.4%)
-    Canonical            3  (3.5%)
-    Endless              2  (2.4%)
-    Collabora            2  (2.4%)
-    Intel                1  (1.2%)
+| Affiliation | Per changeset | Affiliation | Per lines     | Affiliation | Per contributor (total 85)|
+|-------------|--------------:|-------------|--------------:|-------------|--------------------------:|
+| Red Hat     |  1230 (75.5%) | Red Hat     | 61725 (61.6%) |  (Unknown)  |                58 (68.2%) |
+| (Unknown)   |   340 (20.9%) | (Unknown)   | 36845 (36.7%) |  Red Hat    |                19 (22.4%) |
+| Endless     |    43  (2.6%) | Endless     |  1181  (1.2%) |  Canonical  |                 3  (3.5%) |
+| Canonical   |    13  (0.8%) | Canonical   |   491  (0.5%) |  Endless    |                 2  (2.4%) |
+| Collabora   |     2  (0.1%) | Collabora   |    19  (0.0%) |  Collabora  |                 2  (2.4%) |
+| Intel       |     1  (0.1%) | Intel       |     2  (0.0%) |  Intel      |                 1  (1.2%) |
 
 ### Conclusions
 
