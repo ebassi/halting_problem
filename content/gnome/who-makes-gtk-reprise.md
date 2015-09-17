@@ -5,7 +5,7 @@ Tags: glib, gtk, development, gnome, who makes gnome
 Summary: answering the question of who wrote past releases of GTK, one release at a time
 
 As I've been asked by different people about data from older releases of
-GTK+, after the previous article on *Who Wrote GTK+ 3.18*, I ran the
+GTK+, after the previous article on [Who Wrote GTK+ 3.18][wwgtk318], I ran the
 `git-dm` script on every release and generated some more data:
 
 | Release | Lines added | Lines removed | Delta   | Changesets | Contributors |
@@ -69,7 +69,7 @@ The reduced activity between 2.20 and 2.24.0 is easily attributable to the
 fact that people were working hard on the 2.90 branch that would become 3.0.
 
 In general, once you adjust by release time, it's easy to see that the
-amount of contributors is pretty much stable at around 90:
+number of contributors is pretty much stable at around 90:
 
 {%figure {filename}/images/gtk-contributors.png The average is 94.5, which means we have an hobbit somewhere in the commit log %}
 
@@ -78,12 +78,14 @@ companies spawned around GTK+ and GNOME, and how it has changed over the
 years — but that's part of a larger discussion that would probably take more
 than a couple of blog posts to unpack.
 
-I guess the larger point is that GTK+ is definitely not dying; it's pretty
-much being worked on by the same *amount* of people — which include long
-timer as well as newcomers — as it was during the 2.x cycle.
+I guess the larger point is that GTK+ is definitely **not** dying; it's pretty
+much being worked on by the same *amount* of people — which includes long
+timers as well as newcomers — as it was during the 2.x cycle.
 
 [^1]: Both 2.0 and 3.0 are not wholly accurate; I used, as a starting point
       for the changeset period, the previous *released* branch point; for
       GTK+ 2.0, I started from the `GTK_1_3_1` tag, whereas for GTK+ 3.0
       I used the `2.90.0` tag. There are commits preceding both tags, but
       not enough to skew the results.
+
+[wwgtk318]: https://www.bassi.io/articles/2015/09/15/who-wrote-gtk-3-18/
