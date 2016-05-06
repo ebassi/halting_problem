@@ -1,9 +1,8 @@
 Title: The hacker's new groove 
 Slug: groove
-Date: 2015-10-28
 Tags: groove, projects, development
 Summary: Writing a new media player and indexer
-State: draft
+Status: draft
 
 In early 1998, I downloaded my first MP3 file. It was on a website, and all I
 had was a 56k modem, so it took me ages to download the 4 megabytes of 128
