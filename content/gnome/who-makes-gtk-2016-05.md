@@ -69,7 +69,7 @@ Ignacio has been hard at work, helped by Ruslan and Fan, in making 2.48 the
 best GLib release ever in terms of supporting Windows — both for cross
 and native compilation, using autotools and the Microsoft Visual C compiler
 suite. If you can build an application for Windows as reliably as you can on
-Linux, it's because of the work of them.
+Linux, it's because of their work.
 
 #### GTK+
 
