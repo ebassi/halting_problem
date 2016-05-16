@@ -1,6 +1,7 @@
 Title: Reviving the GTK development blog
 Slug: reviving-the-gtk-dev-blog
 Date: 2016-05-16
+Modified: 2016-05-16T19:38+0100
 Tags: glib, gtk, development, gnome, blag, 
 Summary: in which I talk about taking the old lady out for a spin
 Abstract: Development blogs definitely have a place in the continuum of interactions between project maintainers and their users; and if your project does not have a blog already, or has a languishing one with no updates in weeks/months/years, then you should take some time to build it and add some (regularly scheduled) content for it
@@ -46,10 +47,10 @@ environment? How did you find contributing to GTK+ for the first time? If
 you want to write an article for the GTK+ blog talking about this, then feel
 free to reach out to me with an outline, and I'll be happy to help you.
 
-In the meantime, the [first post][gtk-twig-web] in the *This Week in GTK+* has
-gone up; you'll get a new post every Monday, and if you want to raise
-awareness on something that happened during a week, feel free to point it
-out on [the wiki][gtk-twig-wiki].
+In the meantime, the [first post][gtk-twig-web] in the *This Week in GTK+*
+series has gone up; you'll get a new post about it every Monday, and if you
+want to raise awareness on something that happened during a week, feel free
+to point it out on [the wiki][gtk-twig-wiki].
 
 [gtk-blog]: https://blog.gtk.org
 [gtk-web]: http://www.gtk.org
