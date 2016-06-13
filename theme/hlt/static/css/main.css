@@ -239,6 +239,31 @@ div.content p {
   margin-bottom: 10px;
 }
 
+div.content aside {
+  position: absolute;
+  right: -175px;
+  width: 145px;
+  font-size: 12px;
+  margin-top: 0;
+  text-align: left;
+  z-index: 300;
+  letter-spacing: 0.01rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.6);
+  outline: 0px none;
+}
+
+div.content aside:before {
+  width: 25%;
+  margin-right: 75%;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  display: block;
+  content: "";
+  margin-bottom: 10px;
+}
+
 a {
   border-bottom: #999 1px solid;
   color: #303030;
