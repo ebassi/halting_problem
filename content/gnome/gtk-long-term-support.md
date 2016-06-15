@@ -1,6 +1,6 @@
 Title: Long term support for GTK+
 Tags: gtk, lts
-Date: 2016-06-15
+Date: 2016-06-15 16:20 +0100
 Summary: In which I reply to Morten's latest unnecessary rant
 Abstract: I hate turning my blog into a comment section, but some times it's warranted when people that should know better, but evidently don't care, just spout baseless accusations
 
