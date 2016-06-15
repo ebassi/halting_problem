@@ -10,7 +10,7 @@ Abstract: I hate turning my blog into a comment section, but some times it's war
 > contributors have run off to play with new toys is delusional. The record
 > does not support it.
 
-The record (in terms of commit history) seem to **not** support your
+The record (in terms of commit history) seems to **not** support your
 position — as much as you think everyone else is "delusional" about it, the
 commit log does not really lie.
 
