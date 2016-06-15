@@ -46,5 +46,5 @@ and it's basically unmaintained.
 
 
 
-[gtk-drawing]:
+[gtk-drawing]: https://blog.gtk.org/2016/06/15/drawing-in-gtk/
 [gtk-blog]: https://blog.gtk.org
