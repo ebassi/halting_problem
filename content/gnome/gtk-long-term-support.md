@@ -1,6 +1,7 @@
 Title: Long term support for GTK+
 Tags: gtk, lts
 Date: 2016-06-15 16:20 +0100
+Modified: 2016-06-15 18:24 +0100
 Summary: In which I reply to Morten's latest unnecessary rant
 Abstract: I hate turning my blog into a comment section, but some times it's warranted when people that should know better, but evidently don't care, just spout baseless accusations
 
@@ -23,7 +24,7 @@ Since then, the 2.24 branch — i.e. the "feature frozen" branch has seen 873
 commits (as of this afternoon, London time), and 30 additional releases.
 
 Turns out that people *are* being paid to maintain feature-frozen branches
-because that's what the boring bits are — security issues, stability bugs,
+because that's where the "boring" bits are — security issues, stability bugs,
 etc. Volunteers are much more interested in getting the latest and greatest
 feature that probably does not interest you now, but may be requested by
 your users in two years.
