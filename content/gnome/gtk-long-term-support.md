@@ -4,7 +4,7 @@ Date: 2016-06-15
 Summary: In which I reply to Morten's latest unnecessary rant
 Abstract: I hate turning my blog into a comment section, but some times it's warranted when people that should know better, but evidently don't care, just spout baseless accusations
 
-Dear Morten,
+[Dear Morten](https://blogs.gnome.org/mortenw/2016/06/15/gtk-versioning/),
 
 > A belief that achieving stability can be done after most of the paid
 > contributors have run off to play with new toys is delusional. The record
