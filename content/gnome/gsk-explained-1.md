@@ -13,17 +13,17 @@ that first, and then come back here. Don't worry, I'll wait…
 
 ---
 
+<aside>If you're running with X11 you may find some of the XRENDER
+extension operations to be implemented with a modicum of hardware
+acceleration; that does not imply that what you see has hit the right code
+paths in the stack.</aside>
+
 Welcome back! Now that we're on the same page… What I didn't say in that
 article is that most of it happens on your CPU, rather than on your GPU —
 except the very last step, when the compositor takes the contents of each
 window and pushes them to the GPU, likely via the 3D pipeline provided by
 your windowing system, to composite them into what you'll likely see on your
 screen.
-
-<aside>If you're running with X11 you may find some of the XRENDER
-extension operations to be implemented with a modicum of hardware
-acceleration; that does not imply that what you see has hit the right code
-paths in the stack.</aside>
 
 The goal for GUI toolkits, for the past few years, has been to take
 advantage of the GPU programmable pipeline as much as possible, as it allows
@@ -33,14 +33,14 @@ bears to squeeze on an ever reducing sheet of artic ice. It also allows to
 improve the separation of jobs internally to the toolkit, with the potential
 of splitting up the work across multiple CPU cores.
 
-As toolkit developers, we currently have only one major API for talking to
-the GPU, programming it, and using it to put the contents of a window on the
-screen, and that's OpenGL.
-
 <aside>Yes, we also have Vulkan. Or, at least, we're soon going to have
 Vulkan. You can swap OpenGL with Vulkan throughout this article, if you
 want, and you'll get pretty much the same results. Hopefully, internally,
 we'll be able to do the same.</aside>
+
+As toolkit developers, we currently have only one major API for talking to
+the GPU, programming it, and using it to put the contents of a window on the
+screen, and that's OpenGL.
 
 You may think: *well, we use Cairo; Cairo has support for an OpenGL device.
 Just enable that, and we're good to go, right?* and you wouldn't be entirely
@@ -58,15 +58,15 @@ cases it just goes against the expectations of the GPU itself: reading back
 data; minuscule fragments and tesselations; tons of state changes — those
 are all pretty much no-go areas when dealing with a GPU.
 
+<aside>If we could also move frame rendering to separate threads we could
+have multiple frames scheduled on different cores running at the same time,
+thus speeding up the whole drawing process.</aside>
+
 On the other hand, we really want to stop relying so much on the CPU for
 drawing; leaving your cores idle allows them to go into low power states,
 preserving them and improving your battery life; additionally, any cycle
 that is not spent inside the toolkit is a cycle available to your
 application logic.
-
-<aside>If we could also move frame rendering to separate threads we could
-have multiple frames scheduled on different cores running at the same time,
-thus speeding up the whole drawing process.</aside>
 
 As you may know from the past few years, I've been working on writing a new
 API that lets GTK offload to the GPU what currently happens on the CPU; it's
