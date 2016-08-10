@@ -40,7 +40,7 @@ def figure(preprocessor, tag, markup):
     match = ReFigure.search(markup)
     if match:
         attrs = dict([(key, val.strip())
-                      for (key, val) in match.groupdict().iteritems() if val])
+                      for (key, val) in match.groupdict().items() if val])
     else:
         raise ValueError('Error processing input. '
                          'Expected syntax: {0}'.format(SYNTAX))
