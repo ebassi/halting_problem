@@ -1,9 +1,9 @@
 Title: GSK Demystified (II) — Rendering
 Slug: gsk-demystified-2
-Date: 2016-08-10 12:30 +0100
+Date: 2016-08-10 15:20 +0100
 Tags: gtk, gsk, gsk demystified, development, welcome to the world of tomorrow
 Summary: In which rendering GTK with GSK is explained
-Abstract: One of the goals of GSK is provide a way for moving GTK from an immediate mode rendering mechanism to a tree of rendering operations that can be optimized according to our own semantics, instead of teaching Cairo about CSS, which would be a hilarious layering violation.
+Abstract: One of the goals of GSK is provide a way for moving GTK from an immediate mode rendering mechanism to a tree of rendering operations that can be optimized according to our own semantics, instead of teaching Cairo about CSS, which would be a hilarious layering violation as well as an impressive waste of time.
 
 *See the [previous article][gsk-primer-1] for an introduction to GSK.*
 
