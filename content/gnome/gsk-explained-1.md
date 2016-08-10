@@ -1,4 +1,4 @@
-Title: GSK Demystified — A GSK primer (I)
+Title: GSK Demystified (I) — A GSK primer
 Slug: gsk-demystified-1
 Date: 2016-07-05 11:11 +0100
 Tags: gtk, gsk, gsk demystified, development, welcome to the world of tomorrow
