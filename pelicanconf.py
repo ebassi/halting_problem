@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Emmanuele Bassi'
 SITENAME = u'halting problem'
-SITEURL = 'http://www.emmanuelebassi.name'
+SITEURL = 'https://www.bassi.io'
 
 PATH = 'content'
 
@@ -85,11 +85,13 @@ STATIC_PATHS = [
     'talks',
 ]
 
+PLUGIN_PATHS = [ 'plugins' ]
+
 PLUGINS = [
-  'plugins.related_posts',
-  'plugins.liquid_tags.figure',
-  'plugins.liquid_tags.img',
-  'plugins.liquid_tags.include_code',
+  'related_posts',
+  'liquid_tags.figure',
+  'liquid_tags.img',
+  'liquid_tags.include_code',
 ]
 
 # Uncomment following line if you want document-relative URLs when developing
