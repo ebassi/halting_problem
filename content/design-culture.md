@@ -1,6 +1,7 @@
 Title: design culture
 Tags: design, free software
 Summary: software development, free software, and design should not be at odds with each other
+Date: 2014-10-15
 
 there are days when I just read places like Phoronix[^1] and the `r/linux`
 sub-reddit, and I stumble upon great stuff — when I say "stumble upon" I
