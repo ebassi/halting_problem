@@ -1,6 +1,6 @@
 Title: GUADEC/2
 Date: 2016-08-18 9:00 +0100
-Slug: guadec
+Slug: guadec-return
 Tags: guadec, conference, gtk, gnome
 Summary: And we're back…
 
