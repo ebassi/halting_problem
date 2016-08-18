@@ -12,6 +12,7 @@ am now trying to keep them all on this site.
 ### 2016
 
  * GUADEC 2016 — [Are we in the future, yet](http://ebassi.github.io/2016-guadec)
+   ([video](https://www.youtube.com/watch?v=QzJHEpKdefA))
 
 ### 2014
 
