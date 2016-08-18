@@ -9,6 +9,10 @@ both shocked and amazed at that.
 While I ended up storing copies of the notes or slides all over the place, I
 am now trying to keep them all on this site.
 
+### 2016
+
+ * GUADEC 2016 — [Are we in the future, yet](http://ebassi.github.io/2016-guadec)
+
 ### 2014
 
  * GUADEC 2014 — [The GTK+ Scene Graph Kit]({filename}../talks/gsk-guadec-2014.md)
