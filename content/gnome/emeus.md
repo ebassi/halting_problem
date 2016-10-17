@@ -125,3 +125,4 @@ we can get people to migrate from GtkFixed/GtkLayout.
 [gtk-fixed-api]: https://developer.gnome.org/gtk3/stable/GtkFixed.html
 [gtk-layout-api]: https://developer.gnome.org/gtk3/stable/GtkLayout.html
 [emeus-wikipedia]: https://en.wikipedia.org/wiki/Eastern_moa
+[emeus-gh]: https://github.com/ebassi/emeus
