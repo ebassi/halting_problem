@@ -87,7 +87,7 @@ and Smalltalk; since then, various other re-implementations surfaced:
 Python, JavaScript, Haskell, slightly-more-modern-C++, etc.
 
 <aside>To continue in the naming policy of Cassowary implementations, this
-small library is named after [a flightless bird][emeus-wikipedia].</aside>
+small library is named after yet another flightless bird</aside>
 
 To that collection, I've now added my own — written in C/GObject — called
 [Emeus][emeus-gh], which provides a GTK+ container and layout manager that
