@@ -1,0 +1,58 @@
+<interface>
+  <template class="Gjs_MyApplicationWindow" parent="GtkApplicationWindow">
+    <property name="visible">True</property>
+    <property name="default-width">400</property>
+    <property name="default-height">500</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="headerbar">
+        <property name="visible">True</property>
+        <property name="show-close-button">True</property>
+        <property name="title">Centered button</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="box">
+        <property name="visible">True</property>
+        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+        <child>
+          <object class="EmeusConstraintLayout" id="layout">
+            <property name="visible">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <child>
+              <object class="GtkButton" id="button_child">
+                <property name="visible">True</property>
+                <property name="label">Hello, world</property>
+              </object>
+            </child>
+            <constraints>
+              <constraint target-object="button_child"
+                          target-attr="center-x"
+                          relation="eq"
+                          source-object="super"
+                          source-attr="center-x"
+                          strength="required"/>
+              <constraint target-object="button_child"
+                          target-attr="EMEUS_CONSTRAINT_ATTRIBUTE_CENTER_Y"
+                          relation="eq"
+                          source-object="super"
+                          source-attr="center-y"/>
+              <constraint target-object="button_child"
+                          target-attr="width"
+                          relation="ge"
+                          constant="200"
+                          strength="EMEUS_CONSTRAINT_STRENGTH_STRONG"/>
+            </constraints>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="quit_button">
+            <property name="visible">True</property>
+            <property name="hexpand">True</property>
+            <property name="label">Quit</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

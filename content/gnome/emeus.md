@@ -1,7 +1,7 @@
 Title: Constraints
 Slug: constraints
 Tags: development, layout, gtk, constraints, solvers
-Date: 2016-09-23 12:00
+Date: 2016-10-17 18:30 +0100
 Summary: Experiments with constraint-based layout systems for GTK+
 Abstract: Aside from working on GSK, a long-running side project of mine is to write and add new layout policy that is based on constraints instead of fixed positioning and boxes-within-boxes; I've been meaning to add this to GTK+ since the time I wrote a naïve implementation inside Clutter, years ago, and now I got to do it properly for my work at Endless.
 
@@ -71,6 +71,7 @@ platforms like [the Web][autolayout-js].
 
 What many of [these solutions][overconstrained-web] seem to have in common
 is using more or less the same solving algorithm — [Cassowary][cassowary-web].
+
 Cassowary is:
 
 > an incremental constraint solving toolkit that efficiently solves systems
@@ -83,7 +84,37 @@ This makes it particularly suited for user interfaces.
 
 The original implementation of Cassowary was written in 1998, in Java, C++,
 and Smalltalk; since then, various other re-implementations surfaced:
-JavaScript, Haskell, slightly-more-modern-C++, etc.
+Python, JavaScript, Haskell, slightly-more-modern-C++, etc.
+
+<aside>To continue in the naming policy of Cassowary implementations, this
+small library is named after [a flightless bird][emeus-wikipedia].</aside>
+
+To that collection, I've now added my own — written in C/GObject — called
+[Emeus][emeus-gh], which provides a GTK+ container and layout manager that
+uses the Cassowary constraint solving algorithm to compute the allocation
+of each child.
+
+In spirit, the implementation is pretty simple: you create a new
+`EmeusConstraintLayout` widget instance, add a bunch of widgets to it, and
+then use `EmeusConstraint` objects to determine the relations between
+children of the layout:
+
+{% include_code emeus/simple-grid.js lang:js lines:89-170 %}
+
+{% figure {filename}/images/emeus-simple-grid.png A simple grid %}
+
+This obviously look like a ton of code, which is why I added the ability to
+describe constraints inside GtkBuilder XML:
+
+{% include_code emeus/centered.ui lang:xml lines:28-45 %}
+
+Additionally, I'm writing a small parser for the Visual Format Language used
+by Apple for their own auto layout implementation — even though it does look
+like ASCII art of Perl format strings, it's easy to grasp.
+
+The overall idea is to prototype UIs on top of this, and then take advantage
+of GTK+'s new development cycle to introduce something like this and see if
+we can get people to migrate from GtkFixed/GtkLayout.
 
 [swing-springlayout]: https://docs.oracle.com/javase/tutorial/uiswing/layout/spring.html
 [android-constraints]: https://developer.android.com/training/constraint-layout/index.html
@@ -93,4 +124,4 @@ JavaScript, Haskell, slightly-more-modern-C++, etc.
 [overconstrained-web]: http://overconstrained.io
 [gtk-fixed-api]: https://developer.gnome.org/gtk3/stable/GtkFixed.html
 [gtk-layout-api]: https://developer.gnome.org/gtk3/stable/GtkLayout.html
-[emeus-wikipedai]: https://en.wikipedia.org/wiki/Eastern_moa
+[emeus-wikipedia]: https://en.wikipedia.org/wiki/Eastern_moa
