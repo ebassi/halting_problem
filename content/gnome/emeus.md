@@ -103,7 +103,7 @@ children of the layout:
 
 {% figure {filename}/images/emeus-simple-grid.png A simple grid %}
 
-This obviously look like a ton of code, which is why I added the ability to
+This obviously looks like a ton of code, which is why I added the ability to
 describe constraints inside GtkBuilder XML:
 
 {% include_code emeus/centered.ui lang:xml lines:28-45 %}
