@@ -69,14 +69,11 @@ header a#article-author {
   padding-left: 10em;
 }
 
-header div.page-time {
+header div.post-stats {
   text-align: center;
-}
-
-header time {
-  color: #c0c0c0;
   font-size: 14px;
-  margin-top: 65px;
+  margin-top: 16px;
+  color: #c0c0c0;
 }
 
 section {

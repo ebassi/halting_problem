@@ -92,6 +92,7 @@ PLUGINS = [
   'liquid_tags.figure',
   'liquid_tags.img',
   'liquid_tags.include_code',
+  'post_stats',
 ]
 
 # Uncomment following line if you want document-relative URLs when developing

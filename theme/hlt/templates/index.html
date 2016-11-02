@@ -19,7 +19,10 @@
         {% if not articles_page.has_previous() and loop.first %}
             <header>
                 <h1><a href="{{ SITEURL }}" id="site-title">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> :: <a href="{{ SITEURL }}/{{ article.url }}" id="page-title">{{ article.title }}</a></h1>
-                {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{% endif %}
+                <div class="post-stats">
+                  {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time> :: {% endif %}
+                  <span title="~{{ article.stats['wc'] }} words">~{{ article.stats['read_mins'] }} min read</span>
+                </div>
             </header>
 
             <article>
