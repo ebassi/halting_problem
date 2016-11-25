@@ -28,7 +28,7 @@ def calculate_stats(instance):
         content = instance._content
 
         # How fast do average people read?
-        WPM = 250
+        WPM = 200
 
         # Use BeautifulSoup to get readable/visible text
         raw_text = BeautifulSoup(content, 'html.parser').getText()
