@@ -81,6 +81,7 @@ CODE_DIR = 'code'
 
 STATIC_PATHS = [
     'images',
+    'videos',
     'code',
     'talks',
 ]
@@ -92,6 +93,7 @@ PLUGINS = [
   'liquid_tags.figure',
   'liquid_tags.img',
   'liquid_tags.include_code',
+  'liquid_tags.video',
   'post_stats',
 ]
 
