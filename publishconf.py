@@ -20,6 +20,7 @@ DELETE_OUTPUT_DIRECTORY = True
 
 STATIC_PATHS = [
     'images',
+    'videos',
     'code',
     'talks',
     'extra/robots.txt',
