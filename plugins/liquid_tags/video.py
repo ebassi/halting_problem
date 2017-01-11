@@ -29,8 +29,8 @@ SYNTAX = "{% video url/to/video [url/to/video] [url/to/video] [width height] [ur
 VIDEO = re.compile(r'(/\S+|https?:\S+)(\s+(/\S+|https?:\S+))?(\s+(/\S+|https?:\S+))?(\s+(\d+)\s(\d+))?(\s+(/\S+|https?:\S+))?')
 
 VID_TYPEDICT = {'.mp4':"type='video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"'",
-                '.ogv':"type='video/ogg; codecs=theora, vorbis'",
-                '.webm':"type='video/webm; codecs=vp8, vorbis'"}
+                '.ogv':"type='video/ogg; codecs=\"theora, vorbis\"'",
+                '.webm':"type='video/webm; codecs=\"vp8, vorbis\"'"}
 
 
 @LiquidTags.register('video')
