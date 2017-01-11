@@ -94,6 +94,7 @@ PLUGINS = [
   'liquid_tags.img',
   'liquid_tags.include_code',
   'liquid_tags.video',
+  'liquid_tags.youtube',
   'post_stats',
 ]
 
