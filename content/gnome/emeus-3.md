@@ -5,7 +5,7 @@ Date: 2017-01-11 14:30 +0000
 Summary: In which a wild editor of constraints appears inside Emeus
 Abstract: Writing constraints by hand, even when using a dedicated mini-language, is hard without visualizing the result, and that's how Emeus got a small utility for it
 
-[Last year][blog-emeus-2] I talked about the newly added support for Apple's
+[Last year][emeus-blog-2] I talked about the newly added support for Apple's
 Visual Format Language in [Emeus][emeus-web], which allows to quickly
 describe layouts using a cross between ASCII art and predicates. For
 instance, I can use:
@@ -40,9 +40,9 @@ lets you visualize a layout expressed through VFL constraints:
 
 Here's a couple of videos showing it in action:
 
-{% video {filename}/videos/emeus-edit-constraints-1.webm 640 480 %}
+{% youtube wroDZQi7HWA 640 480 %}
 
-{% video {filename}/videos/emeus-edit-constraints-2.webm 640 480 %}
+{% youtube \_nTvuEx1Wvs 640 480 %}
 
 At some point, this could lead to a new UI tool to lay out widgets inside
 [Builder][builder-web] and/or Glade.
