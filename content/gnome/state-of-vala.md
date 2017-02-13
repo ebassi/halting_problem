@@ -12,7 +12,7 @@ Of course, and with reason, I've been called out on this by various people.
 Luckily, it was on Twitter, so we haven't seen articles on Slashdot and
 Phoronix and LWN with headlines like "GNOME developer says Vala is dead and
 will be removed from all servers for all eternity and you all suck". At
-leats, I've only seen a bunch of comments on Reddit about this, but nobody
+least, I've only seen a bunch of comments on Reddit about this, but nobody
 cares about that particular cesspool of humanity.
 
 Sadly, 140 characters do not leave any room for nuance, so maybe I should
