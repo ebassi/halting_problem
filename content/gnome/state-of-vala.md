@@ -108,15 +108,15 @@ These are the commits for [Go][go-web] — the compiler and base library:
 
 ![Go]({filename}/images/go-commits.png)
 
-These are the number of daily commits over the past **year**. Both
-languages are younger than Vala, have more tools than Vala, and are more
-used than Vala. *Of course*, it's completely unfair to compare them, but those
-numbers should give you a sense of scale, of what is the current high bar
-for a successful programming language these days. Vala is a niche language,
-after all; it's heavily piggy-backing on the GNOME community because it
-transpiles to C and needs a standard library and an ecosystem like the one
-GNOME provides. I never expected Vala to rise to the level of mindshare that
-Go and Rust currently occupy.
+These are the number of commits over the past **year**. Both languages are
+younger than Vala, have more tools than Vala, and are more used than Vala.
+*Of course*, it's completely unfair to compare them, but those numbers
+should give you a sense of scale, of what is the current high bar for a
+successful programming language these days. Vala is a niche language, after
+all; it's heavily piggy-backing on the GNOME community because it transpiles
+to C and needs a standard library and an ecosystem like the one GNOME
+provides. I never expected Vala to rise to the level of mindshare that Go
+and Rust currently occupy.
 
 Nevertheless, we need to draw some conclusions about the current state of
 Vala — starting from [this thread][vala-future-mail], perhaps, as it best
