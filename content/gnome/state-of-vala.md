@@ -96,7 +96,7 @@ basis.
 As the maintainer of a project who basically had to do all the work, I
 cannot even begin to tell you how soul-crushing that can become. You get
 burned out, and you feel responsible for everyone using your code, and then
-you get burned down some more. I honestly don't want Rico to burn out, and
+you get burned out some more. I honestly don't want Rico to burn out, and
 you shouldn't, either.
 
 So, let's go into unfair territory. These are the commits for
@@ -108,7 +108,7 @@ These are the commits for [Go][go-web] — the compiler and base library:
 
 ![Go]({filename}/images/go-commits.png)
 
-These are the number of daily commits over the past **month**. Both
+These are the number of daily commits over the past **year**. Both
 languages are younger than Vala, have more tools than Vala, and are more
 used than Vala. *Of course*, it's completely unfair to compare them, but those
 numbers should give you a sense of scale, of what is the current high bar
