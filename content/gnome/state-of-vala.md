@@ -55,6 +55,8 @@ cycles, followed by a spike. If we look at the currently in progress cycle,
 we can already see that the number of commits has decreased back to 55/42,
 as of this morning.
 
+![Commits]({filename}/images/vala-repo-commits-2.png)
+
 Number of commits is just a metric, though; more important is the number of
 contributors. After all, small, incremental changes may be a good thing in a
 language — though, spoiler alert: they are usually an indication of a series
