@@ -145,7 +145,7 @@ days or weeks, because developers of projects using Vala update their
 compiler and suddenly their projects cease to build.
 
 I don't want to minimise the enormous amount of work that every Vala
-contributor brought to the project; they are heros, all of them, and they
+contributor brought to the project; they are heroes, all of them, and they
 deserve as much credit and praise as we can give. The idea of a
 project-oriented, community-oriented programming language has been
 vindicated many times over, in the past 5 years.
