@@ -110,6 +110,10 @@ These are the commits for [Go][go-web] — the compiler and base library:
 
 ![Go]({filename}/images/go-commits.png)
 
+These are the commits for Vala — both compiler and bindings:
+
+![Vala]({filename}/images/vala-commits.png)
+
 These are the number of commits over the past **year**. Both languages are
 younger than Vala, have more tools than Vala, and are more used than Vala.
 *Of course*, it's completely unfair to compare them, but those numbers
