@@ -345,9 +345,18 @@ div.footnote ol li {
 }
 
 .tag {
-  background-color: #eee;
-  padding: 0.1em 0.4em;
+  background-color: #999;
+  color: #eee;
+  text-shadow: 0px 1px #555;
+  padding: 3px 7px;
   margin: 0.1em 0.4em;
+  border-radius: 100px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.tag:hover {
+  color: #eee;
 }
 
 .content-list {
