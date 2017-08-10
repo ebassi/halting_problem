@@ -1,8 +1,9 @@
 Title: Dev v Ops
 Tags: design, free software, distribution, platform, security
 Date: 2017-08-10 16:51 +0100
+Modified: 2017-08-10 18:55 +0100
 Summary: In which application development and packaging are discussed, vis-a-vis old and new practices
-Abstract: I decided not to post this article, even if it deals with a GUADEC presentation, in the section that gets syndacated on Planet GNOME; I didn't want to be inappropriately confrontational, and I didn't want this to be picked up as the position of GNOME, my employer, or essentially anybody but myself.
+Abstract: Initially, I decided not to post this article, even if it deals with a GUADEC presentation, in the section that gets syndacated on Planet GNOME; I didn't want to be inappropriately confrontational, and I didn't want this to be picked up as the position of GNOME, my employer, or essentially anybody but myself. I've received positive feedback from various people, so I feel a bit better about my intentions coming through.
 
 In [his talk][rb-talk] at the 2017 GUADEC in Manchester, Richard Brown
 presented a set of objections to the current trend of new packaging systems
