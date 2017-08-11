@@ -2,6 +2,7 @@ GUADEC 2017
 ###########
 
 :date: 2017-08-11 13:45 +0100
+:modified: 2017-08-11 14:33 +0100
 :tags: guadec, gnome, conferences, activities
 :category: gnome
 :slug: 2017-guadec
@@ -77,6 +78,17 @@ I talked about Flatpak, FlatHub, Builder, performance in Mutter and GNOME
 Shell; I wanted to attend the Rust and GJS sessions, but that would have
 required the ability to clone myself, or be in more than one place at once.
 
+During the unconference, I was also able to finally finish the GDK-Pixbuf
+port of the build system to Meson_. Testing is very much welcome, before
+we bin the Autotools build and bring one of the oldest modules in GNOME
+into the future.
+
+Additionally, I was invited to the GNOME Release Team, mostly to deal with
+the various continuous integration build issues. This, sadly, does not mean
+that I'm one step closer to my ascendance as the power mad dictator of all
+of GNOME, but it means that if there are issues with your module, you have
+a more-or-less official point of contact.
+
 ----
 
 I can't wait for GUADEC 2018! See you all in Almería!
@@ -101,3 +113,6 @@ I can't wait for GUADEC 2018! See you all in Almería!
 
 .. _unconference:
    https://wiki.gnome.org/GUADEC/2017/Unconference/
+
+.. _Meson:
+   http://mesonbuild.com
