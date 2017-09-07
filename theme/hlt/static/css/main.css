@@ -533,3 +533,21 @@ tbody tr td:nth-child(2) {
 tbody tr td:nth-child(3) {
   padding-left: 1em;
 }
+@media only screen and (max-device-width: 640px) {
+  article div.content, p#article-abstract, figure.code figcaption, article img, 
+  article p#article-meta, article div.related, .content-list, #article-list,
+  #author-list, #tag-list, #category-list, .paginator, footer, figcaption.image-caption {
+    width: auto;
+  }
+  blockquote {
+    margin: 48px 12px;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.2;
+  }
+  figcaption.image-caption {
+    position: static;
+    line-height: 1;
+  }
+
+}
