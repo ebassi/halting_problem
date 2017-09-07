@@ -536,7 +536,8 @@ tbody tr td:nth-child(3) {
 @media only screen and (max-device-width: 640px) {
   article div.content, p#article-abstract, figure.code figcaption, article img, 
   article p#article-meta, article div.related, .content-list, #article-list,
-  #author-list, #tag-list, #category-list, .paginator, footer, figcaption.image-caption {
+  #author-list, #tag-list, #category-list, .paginator, footer, figcaption.image-caption,
+  header, table {
     width: auto;
   }
   blockquote {
@@ -548,6 +549,9 @@ tbody tr td:nth-child(3) {
   figcaption.image-caption {
     position: static;
     line-height: 1;
+  }
+  table {
+    margin-left: 0;
   }
 
 }
