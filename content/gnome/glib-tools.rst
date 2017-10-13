@@ -2,6 +2,7 @@ GLib tools rewrite
 ##################
 
 :date: 2017-10-13 12:39 +0100
+:modified: 2017-10-13 16:21 +0100
 :tags: gnome, development, glib, autotools
 :category: gnome
 :slug: glib-tools
@@ -34,7 +35,7 @@ Sadly, none of the behaviours and expected input or output of both tools have
 ever been documented, specified, or tested in any way. Additionally, it turns
 out that lots of people either figured out how to exploit undefined behaviour,
 or simply cargo-culted the use of these tools into their own project. This is
-entirely on us, and I'm going to try and provide better documentation to both
+entirely on us, and I'm going to try and provide `better documentation`_ to both
 tools in the form of a decent man page, with examples of integration inside
 Autotools-based projects.
 
@@ -159,3 +160,6 @@ fixing my awful Parseltongue.
 
 .. _would ship its own version:
    https://bugzilla.gnome.org/show_bug.cgi?id=627241
+
+.. _better documentation:
+   https://bugzilla.gnome.org/show_bug.cgi?id=788948
