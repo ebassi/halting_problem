@@ -145,6 +145,12 @@ where involving a whole separate pass at parsing C files is kind of overkill.
 Ideally, GLib `would ship its own version`_, so maybe it'll be replaced
 in a new version.
 
+----
+
+Many thanks to Jussi Pakkanen, Nirbheek Chauhan, Tim-Philipp Müller, and
+Christoph Reiter for the work on porting ``glib-mkenums``, as well as
+fixing my awful Parseltongue.
+
 .. _Meson:
    http://mesonbuild.com
 
