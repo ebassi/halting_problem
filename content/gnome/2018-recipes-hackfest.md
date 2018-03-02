@@ -2,7 +2,7 @@ Title: Recipes hackfest
 Slug: recipes-hackfest-2018
 Tags: hackfest, recipes, gtk, design
 Summary: In which I recap the Recipes hackfest held in Yogyakarta
-Date: 2018-03-02 07:13 -0700
+Date: 2018-03-01 08:50 -0700
 
 The Recipes application started as a celebration of GNOME's community and
 history, and it's grown to be a great showcase for what GNOME is about:
@@ -85,7 +85,10 @@ attend the hackfest; and the GNOME Foundation, for sponsoring my travel.
 
 - - - -
 
-![Sponsored by the GNOME Foundation]({filename}/images/sponsored-badge-simple.png)
+<div style="text-align:center">
+  <img class="center" src="{filename}/images/sponsored-badge-simple.png" alt="Sponsored by the GNOME Foundation"/>
+</div>
+
 
 [eos-knowledge-lib]: https://endlessm.github.io/eos-knowledge-lib
 [wiki-hackfest]: https://wiki.gnome.org/Hackfests/Recipes2018
