@@ -2,7 +2,7 @@ Title: Recipes hackfest
 Slug: recipes-hackfest-2018
 Tags: hackfest, recipes, gtk, design
 Summary: In which I recap the Recipes hackfest held in Yogyakarta
-Date: 2018-03-01 08:50 -0700
+Date: 2018-03-02 01:50 +0100
 
 The Recipes application started as a celebration of GNOME's community and
 history, and it's grown to be a great showcase for what GNOME is about:
