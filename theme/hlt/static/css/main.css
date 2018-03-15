@@ -500,11 +500,11 @@ footer ul.social li a, footer ul.pages li a {
   text-decoration: none;
 }
 
-ul.social li::before {
+ul.social li:before {
   content: ":: ";
 }
 
-ul.social li::after {
+ul.social li:after {
   content: " ::";
 }
 
@@ -546,6 +546,20 @@ tbody tr td:nth-child(3) {
   #author-list, #tag-list, #category-list, .paginator, footer, figcaption.image-caption,
   header, table {
     width: auto;
+  }
+  body {
+    font-size: 18px;
+  }
+  header {
+    position: relative;
+    transform: none;
+    transition: none;
+  }
+  header h1 a#site-title:after {
+    content: "\A"; white-space: pre-line;
+  }
+  header h1 a#page-title:before {
+    content: "\A"; white-space: pre-line;
   }
   blockquote {
     margin: 48px 12px;
