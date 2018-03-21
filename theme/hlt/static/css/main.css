@@ -299,24 +299,20 @@ div.highlight {
   padding: 16px 8px;
 }
 
-tt, pre {
-  color: #fafafa;
-  background-color: black;
-  border-radius: 6px;
-  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.25);
-  font-family: 'Inconsolata', Monaco, monospace;
-  line-height: 1.2em;
-  border: none;
-
-}
-
-code {
+tt, code {
   font-family: 'Inconsolata', Monaco, monospace;
 }
 
 pre {
-  font-size: 18px;
-  padding: 10px;
+  color: #fafafa;
+  background-color: black;
+  border-radius: 6px;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.25);
+  font-family: 'Inconsolata', Monaco, monospace;
+  line-height: 1.2em;
+  border: none;
+  padding: 10px 1em;
+  font-size: 0.9em;
   overflow: auto;
   white-space: pre;
   word-break: normal;
